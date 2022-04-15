@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JVM: Referência ao ficheiro src/Stacks/operands_stack.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JVM
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Localizar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('operands__stack_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro operands_stack.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="operands__stack_8h_source.html">../../lib/Stacks/operands_stack.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para operands_stack.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="operands__stack_8c__incl.png" border="0" usemap="#asrc_2_stacks_2operands__stack_8c" alt=""/></div>
+<map name="asrc_2_stacks_2operands__stack_8c" id="asrc_2_stacks_2operands__stack_8c">
+<area shape="rect" title=" " alt="" coords="27,5,170,47"/>
+<area shape="rect" title=" " alt="" coords="96,259,157,285"/>
+<area shape="rect" title=" " alt="" coords="23,102,87,129"/>
+<area shape="rect" title=" " alt="" coords="111,102,177,129"/>
+<area shape="rect" href="operands__stack_8h.html" title=" " alt="" coords="201,95,362,136"/>
+<area shape="rect" title=" " alt="" coords="265,259,330,285"/>
+<area shape="rect" title=" " alt="" coords="64,184,139,211"/>
+<area shape="rect" href="operands__list_8h.html" title=" " alt="" coords="163,184,317,211"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a29c01f05e8d95a1b07792c606d1599ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">Pilha_operandos</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="operands__stack_8c.html#a29c01f05e8d95a1b07792c606d1599ea">CriarPilha_operandos</a> ()</td></tr>
+<tr class="memdesc:a29c01f05e8d95a1b07792c606d1599ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa uma pilha de frames.  <a href="operands__stack_8c.html#a29c01f05e8d95a1b07792c606d1599ea">Mais...</a><br /></td></tr>
+<tr class="separator:a29c01f05e8d95a1b07792c606d1599ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae45f94b8defe4235f910511474f9b9d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">Pilha_operandos</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="operands__stack_8c.html#ae45f94b8defe4235f910511474f9b9d4">Push_operandos</a> (<a class="el" href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">Pilha_operandos</a> *p, <a class="el" href="classfile_8h.html#ae5be1f726785414dd1b77d60df074c9d">u4</a> operando, void *referencia, <a class="el" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a> tipo_operando)</td></tr>
+<tr class="memdesc:ae45f94b8defe4235f910511474f9b9d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere um operando no topo da pilha de operandos.  <a href="operands__stack_8c.html#ae45f94b8defe4235f910511474f9b9d4">Mais...</a><br /></td></tr>
+<tr class="separator:ae45f94b8defe4235f910511474f9b9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37ee19277aed1810badbffc68f9a7074"><td class="memItemLeft" align="right" valign="top"><a class="el" href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">Pilha_operandos</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="operands__stack_8c.html#a37ee19277aed1810badbffc68f9a7074">Pop_operandos</a> (<a class="el" href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">Pilha_operandos</a> *p)</td></tr>
+<tr class="memdesc:a37ee19277aed1810badbffc68f9a7074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove o operando localizado no topo da pilha de operandos.  <a href="operands__stack_8c.html#a37ee19277aed1810badbffc68f9a7074">Mais...</a><br /></td></tr>
+<tr class="separator:a37ee19277aed1810badbffc68f9a7074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa169740cd2957dfe1123a9698c12cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="operands__stack_8c.html#a9fa169740cd2957dfe1123a9698c12cb">pilhaVazia</a> (<a class="el" href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">Pilha_operandos</a> *p)</td></tr>
+<tr class="memdesc:a9fa169740cd2957dfe1123a9698c12cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a pilha de operandos está vazia.  <a href="operands__stack_8c.html#a9fa169740cd2957dfe1123a9698c12cb">Mais...</a><br /></td></tr>
+<tr class="separator:a9fa169740cd2957dfe1123a9698c12cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b458f03028af329c0bbe1c186ea6bc3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="operands__stack_8c.html#a6b458f03028af329c0bbe1c186ea6bc3">printVazio</a> (<a class="el" href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">Pilha_operandos</a> *p)</td></tr>
+<tr class="memdesc:a6b458f03028af329c0bbe1c186ea6bc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se o campo no topo da pilha de operandos é um salto de linha (na impressão)  <a href="operands__stack_8c.html#a6b458f03028af329c0bbe1c186ea6bc3">Mais...</a><br /></td></tr>
+<tr class="separator:a6b458f03028af329c0bbe1c186ea6bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6bdff8b8e454d702e3f0ae623c9d21f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">Pilha_operandos</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="operands__stack_8c.html#ae6bdff8b8e454d702e3f0ae623c9d21f">Topo_operandos</a> (<a class="el" href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">Pilha_operandos</a> *p)</td></tr>
+<tr class="memdesc:ae6bdff8b8e454d702e3f0ae623c9d21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acessa o topo da pilha de operandos.  <a href="operands__stack_8c.html#ae6bdff8b8e454d702e3f0ae623c9d21f">Mais...</a><br /></td></tr>
+<tr class="separator:ae6bdff8b8e454d702e3f0ae623c9d21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc45c75c684daee21e542f18bbd6e592"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="operands__stack_8c.html#acc45c75c684daee21e542f18bbd6e592">ImprimirPilha_operandos</a> (<a class="el" href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">Pilha_operandos</a> *p)</td></tr>
+<tr class="memdesc:acc45c75c684daee21e542f18bbd6e592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime na tela uma representação textual da pilha de operandos.  <a href="operands__stack_8c.html#acc45c75c684daee21e542f18bbd6e592">Mais...</a><br /></td></tr>
+<tr class="separator:acc45c75c684daee21e542f18bbd6e592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a29c01f05e8d95a1b07792c606d1599ea" name="a29c01f05e8d95a1b07792c606d1599ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29c01f05e8d95a1b07792c606d1599ea">&#9670;&nbsp;</a></span>CriarPilha_operandos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">Pilha_operandos</a> * CriarPilha_operandos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializa uma pilha de frames. </p>
+<p >Esta função inicializa uma pilha de operandos vazia para utilização posterior </p><dl class="section return"><dt>Retorna</dt><dd>Pilha de operandos com valor nulo </dd></dl>
+
+</div>
+</div>
+<a id="acc45c75c684daee21e542f18bbd6e592" name="acc45c75c684daee21e542f18bbd6e592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc45c75c684daee21e542f18bbd6e592">&#9670;&nbsp;</a></span>ImprimirPilha_operandos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ImprimirPilha_operandos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">Pilha_operandos</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Imprime na tela uma representação textual da pilha de operandos. </p>
+<p >Esta função apenas invoca a função ImprimirLista_operandos do lista_operandos.h</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Ponteiro para a pilha de operandos a ser impressa </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9fa169740cd2957dfe1123a9698c12cb" name="a9fa169740cd2957dfe1123a9698c12cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fa169740cd2957dfe1123a9698c12cb">&#9670;&nbsp;</a></span>pilhaVazia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pilhaVazia </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">Pilha_operandos</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se a pilha de operandos está vazia. </p>
+<p >A função checa se o topo da pilha contém o valor NULO.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Ponteiro para a pilha de operandos </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>booleano TRUE (pilha está vazia) ou FALSE (pilha não está vazia) </dd></dl>
+
+</div>
+</div>
+<a id="a37ee19277aed1810badbffc68f9a7074" name="a37ee19277aed1810badbffc68f9a7074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37ee19277aed1810badbffc68f9a7074">&#9670;&nbsp;</a></span>Pop_operandos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">Pilha_operandos</a> * Pop_operandos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">Pilha_operandos</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove o operando localizado no topo da pilha de operandos. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Ponteiro para a pilha de operandos </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Pilha de operandos com o elemento do topo removido </dd></dl>
+
+</div>
+</div>
+<a id="a6b458f03028af329c0bbe1c186ea6bc3" name="a6b458f03028af329c0bbe1c186ea6bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b458f03028af329c0bbe1c186ea6bc3">&#9670;&nbsp;</a></span>printVazio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool printVazio </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">Pilha_operandos</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se o campo no topo da pilha de operandos é um salto de linha (na impressão) </p>
+<p >Algumas exceções podem imprimir um salto de linha, ou chamadas de <code>System.out.println</code> sem argumentos.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Ponteiro para a pilha de operandos a ser verificada </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae45f94b8defe4235f910511474f9b9d4" name="ae45f94b8defe4235f910511474f9b9d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae45f94b8defe4235f910511474f9b9d4">&#9670;&nbsp;</a></span>Push_operandos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">Pilha_operandos</a> * Push_operandos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">Pilha_operandos</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfile_8h.html#ae5be1f726785414dd1b77d60df074c9d">u4</a>&#160;</td>
+          <td class="paramname"><em>operando</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>referencia</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a>&#160;</td>
+          <td class="paramname"><em>tipo_operando</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insere um operando no topo da pilha de operandos. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Ponteiro para a pilha de operandos </td></tr>
+    <tr><td class="paramname">operando</td><td>Operando de valor direto a ser inserido na pilha </td></tr>
+    <tr><td class="paramname">referencia</td><td>Operando de referência a ser inserido na lista </td></tr>
+    <tr><td class="paramname">tipo_operando</td><td>Definição do tipo de operando a ser inserido </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Ponteiro para a pilha de operandos após a inserção do novo operando </dd></dl>
+
+</div>
+</div>
+<a id="ae6bdff8b8e454d702e3f0ae623c9d21f" name="ae6bdff8b8e454d702e3f0ae623c9d21f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6bdff8b8e454d702e3f0ae623c9d21f">&#9670;&nbsp;</a></span>Topo_operandos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">Pilha_operandos</a> * Topo_operandos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">Pilha_operandos</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Acessa o topo da pilha de operandos. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Ponteiro para a pilha de operandos </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Ponteiro referente ao topo da pilha </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b06f8d2b4576511fd864c764ec99b067.html">Stacks</a></li><li class="navelem"><a class="el" href="operands__stack_8c.html">operands_stack.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+  </ul>
+</div>
+</body>
+</html>

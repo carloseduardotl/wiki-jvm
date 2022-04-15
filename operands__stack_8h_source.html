@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JVM: Código-Fonte de lib/Stacks/operands_stack.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JVM
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Localizar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('operands__stack_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">operands_stack.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="operands__stack_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">Universidade de Brasília - Software Básico</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">Grupo:</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">    Bruno Couto Marino 190011106</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">    Carlos Eduardo Taborda Lottermann 180041509</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">    Gabriel Henrique Souza de Melo 180136577</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">    Igor Laranja Borges Taquary 180122231</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">    Matheus Araujo Ferreira 180024892</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">    Bruno Murta Oliveira de Castro 160069742</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef OPERANDS_STACK_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define OPERANDS_STACK_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef TIPOS_U</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="operands__stack_8h.html#a15b7b54f84c933d1dc59bc77919a3368">   20</a></span><span class="preprocessor">#define TIPOS_U</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="operands__stack_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">   21</a></span><span class="keyword">typedef</span> uint8_t <a class="code hl_typedef" href="operands__stack_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a>;     </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="operands__stack_8h.html#a732cde1300aafb73b0ea6c2558a7a54f">   22</a></span><span class="keyword">typedef</span> uint16_t <a class="code hl_typedef" href="operands__stack_8h.html#a732cde1300aafb73b0ea6c2558a7a54f">u2</a>;    </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="operands__stack_8h.html#ae5be1f726785414dd1b77d60df074c9d">   23</a></span><span class="keyword">typedef</span> uint32_t <a class="code hl_typedef" href="operands__stack_8h.html#ae5be1f726785414dd1b77d60df074c9d">u4</a>;    </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="operands__stack_8h.html#ae4d1c3d548028e31400378ec81026110">   24</a></span><span class="keyword">typedef</span> uint64_t <a class="code hl_typedef" href="operands__stack_8h.html#ae4d1c3d548028e31400378ec81026110">u8</a>;    </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;../Lists/operands_list.h&quot;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structpilha__operandos.html">   35</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structpilha__operandos.html">pilha_operandos</a>{</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structpilha__operandos.html#ac30f34c09fb880d1d5929f09b0a8261d">   36</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a> *<a class="code hl_variable" href="structpilha__operandos.html#ac30f34c09fb880d1d5929f09b0a8261d">topo</a>; </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">   37</a></span>} <a class="code hl_typedef" href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">Pilha_operandos</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><a class="code hl_struct" href="structpilha__operandos.html">Pilha_operandos</a>* <a class="code hl_function" href="operands__stack_8h.html#a29c01f05e8d95a1b07792c606d1599ea">CriarPilha_operandos</a>();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><a class="code hl_struct" href="structpilha__operandos.html">Pilha_operandos</a>* <a class="code hl_function" href="operands__stack_8h.html#ae45f94b8defe4235f910511474f9b9d4">Push_operandos</a>(<a class="code hl_struct" href="structpilha__operandos.html">Pilha_operandos</a> *p, <a class="code hl_typedef" href="classfile_8h.html#ae5be1f726785414dd1b77d60df074c9d">u4</a> <a class="code hl_variable" href="structlista__operandos.html#a153f7fb0eafc0d3458ee6bed93da7c43">operando</a>, <span class="keywordtype">void</span> *<a class="code hl_variable" href="structlista__operandos.html#a54bba1f2ac99488a6e43292872dfb1cf">referencia</a>, <a class="code hl_typedef" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a> <a class="code hl_variable" href="structlista__operandos.html#ad74497178fa433397953ee125ead51d1">tipo_operando</a>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><a class="code hl_struct" href="structpilha__operandos.html">Pilha_operandos</a>* <a class="code hl_function" href="operands__stack_8h.html#a37ee19277aed1810badbffc68f9a7074">Pop_operandos</a>(<a class="code hl_struct" href="structpilha__operandos.html">Pilha_operandos</a> *p);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><a class="code hl_struct" href="structpilha__operandos.html">Pilha_operandos</a>* <a class="code hl_function" href="operands__stack_8h.html#ae6bdff8b8e454d702e3f0ae623c9d21f">Topo_operandos</a>(<a class="code hl_struct" href="structpilha__operandos.html">Pilha_operandos</a> *p);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keywordtype">bool</span> <a class="code hl_function" href="operands__stack_8h.html#a9fa169740cd2957dfe1123a9698c12cb">pilhaVazia</a> (<a class="code hl_struct" href="structpilha__operandos.html">Pilha_operandos</a> *p);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keywordtype">void</span> <a class="code hl_function" href="operands__stack_8h.html#acc45c75c684daee21e542f18bbd6e592">ImprimirPilha_operandos</a>(<a class="code hl_struct" href="structpilha__operandos.html">Pilha_operandos</a> *p);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keywordtype">bool</span> <a class="code hl_function" href="operands__stack_8h.html#a6b458f03028af329c0bbe1c186ea6bc3">printVazio</a> (<a class="code hl_struct" href="structpilha__operandos.html">Pilha_operandos</a> *p);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassfile_8h_html_ad9f4cdb6757615aae2fad89dab3c5470"><div class="ttname"><a href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a></div><div class="ttdeci">uint8_t u1</div><div class="ttdef"><b>Definition:</b> classfile.h:55</div></div>
+<div class="ttc" id="aclassfile_8h_html_ae5be1f726785414dd1b77d60df074c9d"><div class="ttname"><a href="classfile_8h.html#ae5be1f726785414dd1b77d60df074c9d">u4</a></div><div class="ttdeci">uint32_t u4</div><div class="ttdef"><b>Definition:</b> classfile.h:57</div></div>
+<div class="ttc" id="aoperands__stack_8h_html_a29c01f05e8d95a1b07792c606d1599ea"><div class="ttname"><a href="operands__stack_8h.html#a29c01f05e8d95a1b07792c606d1599ea">CriarPilha_operandos</a></div><div class="ttdeci">Pilha_operandos * CriarPilha_operandos()</div><div class="ttdoc">Inicializa uma pilha de frames.</div><div class="ttdef"><b>Definition:</b> operands_stack.c:16</div></div>
+<div class="ttc" id="aoperands__stack_8h_html_a37ee19277aed1810badbffc68f9a7074"><div class="ttname"><a href="operands__stack_8h.html#a37ee19277aed1810badbffc68f9a7074">Pop_operandos</a></div><div class="ttdeci">Pilha_operandos * Pop_operandos(Pilha_operandos *p)</div><div class="ttdoc">Remove o operando localizado no topo da pilha de operandos.</div><div class="ttdef"><b>Definition:</b> operands_stack.c:27</div></div>
+<div class="ttc" id="aoperands__stack_8h_html_a6b42b83862497afaac8fd4924ad533f5"><div class="ttname"><a href="operands__stack_8h.html#a6b42b83862497afaac8fd4924ad533f5">Pilha_operandos</a></div><div class="ttdeci">struct pilha_operandos Pilha_operandos</div></div>
+<div class="ttc" id="aoperands__stack_8h_html_a6b458f03028af329c0bbe1c186ea6bc3"><div class="ttname"><a href="operands__stack_8h.html#a6b458f03028af329c0bbe1c186ea6bc3">printVazio</a></div><div class="ttdeci">bool printVazio(Pilha_operandos *p)</div><div class="ttdoc">Verifica se o campo no topo da pilha de operandos é um salto de linha (na impressão)</div><div class="ttdef"><b>Definition:</b> operands_stack.c:44</div></div>
+<div class="ttc" id="aoperands__stack_8h_html_a732cde1300aafb73b0ea6c2558a7a54f"><div class="ttname"><a href="operands__stack_8h.html#a732cde1300aafb73b0ea6c2558a7a54f">u2</a></div><div class="ttdeci">uint16_t u2</div><div class="ttdef"><b>Definition:</b> operands_stack.h:22</div></div>
+<div class="ttc" id="aoperands__stack_8h_html_a9fa169740cd2957dfe1123a9698c12cb"><div class="ttname"><a href="operands__stack_8h.html#a9fa169740cd2957dfe1123a9698c12cb">pilhaVazia</a></div><div class="ttdeci">bool pilhaVazia(Pilha_operandos *p)</div><div class="ttdoc">Verifica se a pilha de operandos está vazia.</div><div class="ttdef"><b>Definition:</b> operands_stack.c:35</div></div>
+<div class="ttc" id="aoperands__stack_8h_html_acc45c75c684daee21e542f18bbd6e592"><div class="ttname"><a href="operands__stack_8h.html#acc45c75c684daee21e542f18bbd6e592">ImprimirPilha_operandos</a></div><div class="ttdeci">void ImprimirPilha_operandos(Pilha_operandos *p)</div><div class="ttdoc">Imprime na tela uma representação textual da pilha de operandos.</div><div class="ttdef"><b>Definition:</b> operands_stack.c:63</div></div>
+<div class="ttc" id="aoperands__stack_8h_html_ad9f4cdb6757615aae2fad89dab3c5470"><div class="ttname"><a href="operands__stack_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a></div><div class="ttdeci">uint8_t u1</div><div class="ttdef"><b>Definition:</b> operands_stack.h:21</div></div>
+<div class="ttc" id="aoperands__stack_8h_html_ae45f94b8defe4235f910511474f9b9d4"><div class="ttname"><a href="operands__stack_8h.html#ae45f94b8defe4235f910511474f9b9d4">Push_operandos</a></div><div class="ttdeci">Pilha_operandos * Push_operandos(Pilha_operandos *p, u4 operando, void *referencia, u1 tipo_operando)</div><div class="ttdoc">Insere um operando no topo da pilha de operandos.</div><div class="ttdef"><b>Definition:</b> operands_stack.c:22</div></div>
+<div class="ttc" id="aoperands__stack_8h_html_ae4d1c3d548028e31400378ec81026110"><div class="ttname"><a href="operands__stack_8h.html#ae4d1c3d548028e31400378ec81026110">u8</a></div><div class="ttdeci">uint64_t u8</div><div class="ttdef"><b>Definition:</b> operands_stack.h:24</div></div>
+<div class="ttc" id="aoperands__stack_8h_html_ae5be1f726785414dd1b77d60df074c9d"><div class="ttname"><a href="operands__stack_8h.html#ae5be1f726785414dd1b77d60df074c9d">u4</a></div><div class="ttdeci">uint32_t u4</div><div class="ttdef"><b>Definition:</b> operands_stack.h:23</div></div>
+<div class="ttc" id="aoperands__stack_8h_html_ae6bdff8b8e454d702e3f0ae623c9d21f"><div class="ttname"><a href="operands__stack_8h.html#ae6bdff8b8e454d702e3f0ae623c9d21f">Topo_operandos</a></div><div class="ttdeci">Pilha_operandos * Topo_operandos(Pilha_operandos *p)</div><div class="ttdoc">Acessa o topo da pilha de operandos.</div><div class="ttdef"><b>Definition:</b> operands_stack.c:59</div></div>
+<div class="ttc" id="astructlista__operandos_html"><div class="ttname"><a href="structlista__operandos.html">lista_operandos</a></div><div class="ttdoc">Estrutura de dados da lista de operandos.</div><div class="ttdef"><b>Definition:</b> operands_list.h:42</div></div>
+<div class="ttc" id="astructlista__operandos_html_a153f7fb0eafc0d3458ee6bed93da7c43"><div class="ttname"><a href="structlista__operandos.html#a153f7fb0eafc0d3458ee6bed93da7c43">lista_operandos::operando</a></div><div class="ttdeci">i4 operando</div><div class="ttdef"><b>Definition:</b> operands_list.h:43</div></div>
+<div class="ttc" id="astructlista__operandos_html_a54bba1f2ac99488a6e43292872dfb1cf"><div class="ttname"><a href="structlista__operandos.html#a54bba1f2ac99488a6e43292872dfb1cf">lista_operandos::referencia</a></div><div class="ttdeci">void * referencia</div><div class="ttdef"><b>Definition:</b> operands_list.h:44</div></div>
+<div class="ttc" id="astructlista__operandos_html_ad74497178fa433397953ee125ead51d1"><div class="ttname"><a href="structlista__operandos.html#ad74497178fa433397953ee125ead51d1">lista_operandos::tipo_operando</a></div><div class="ttdeci">u1 tipo_operando</div><div class="ttdef"><b>Definition:</b> operands_list.h:45</div></div>
+<div class="ttc" id="astructpilha__operandos_html"><div class="ttname"><a href="structpilha__operandos.html">pilha_operandos</a></div><div class="ttdoc">Estrutura de dados da pilha de operandos.</div><div class="ttdef"><b>Definition:</b> operands_stack.h:35</div></div>
+<div class="ttc" id="astructpilha__operandos_html_ac30f34c09fb880d1d5929f09b0a8261d"><div class="ttname"><a href="structpilha__operandos.html#ac30f34c09fb880d1d5929f09b0a8261d">pilha_operandos::topo</a></div><div class="ttdeci">struct lista_operandos * topo</div><div class="ttdef"><b>Definition:</b> operands_stack.h:36</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_51a06ba8d0812078d9a8dc372bad4f39.html">Stacks</a></li><li class="navelem"><a class="el" href="operands__stack_8h.html">operands_stack.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+  </ul>
+</div>
+</body>
+</html>

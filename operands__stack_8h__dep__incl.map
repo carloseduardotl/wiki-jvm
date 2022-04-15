@@ -1,0 +1,20 @@
+<map id="lib/Stacks/operands_stack.h" name="lib/Stacks/operands_stack.h">
+<area shape="rect" id="node1" title=" " alt="" coords="485,5,622,47"/>
+<area shape="rect" id="node2" href="$classfile_8h.html" title=" " alt="" coords="432,102,531,129"/>
+<area shape="rect" id="node18" href="$operands__stack_8c.html" title=" " alt="" coords="555,95,698,136"/>
+<area shape="rect" id="node3" href="$class__list_8h.html" title=" " alt="" coords="519,259,657,285"/>
+<area shape="rect" id="node5" href="$interpreter_8h.html" title=" " alt="" coords="257,408,365,435"/>
+<area shape="rect" id="node6" href="$interpreter_8c.html" title=" " alt="" coords="225,483,338,509"/>
+<area shape="rect" id="node8" href="$main_8c.html" title=" " alt="" coords="440,408,523,435"/>
+<area shape="rect" id="node10" href="$frames__list_8h.html" title=" " alt="" coords="295,184,441,211"/>
+<area shape="rect" id="node14" href="$instructions_8h.html" title=" " alt="" coords="732,259,849,285"/>
+<area shape="rect" id="node15" href="$leitor__exibidor_8h.html" title=" " alt="" coords="628,333,759,360"/>
+<area shape="rect" id="node4" href="$jvm_8h.html" title=" " alt="" coords="367,333,438,360"/>
+<area shape="rect" id="node9" href="$class__list_8c.html" title=" " alt="" coords="547,408,690,435"/>
+<area shape="rect" id="node7" href="$jvm_8c.html" title=" " alt="" coords="394,483,470,509"/>
+<area shape="rect" id="node11" href="$frames__stack_8h.html" title=" " alt="" coords="94,259,269,285"/>
+<area shape="rect" id="node13" href="$frames__list_8c.html" title=" " alt="" coords="293,259,443,285"/>
+<area shape="rect" id="node12" href="$frames__stack_8c.html" title=" " alt="" coords="93,333,272,360"/>
+<area shape="rect" id="node16" href="$leitor__exibidor_8c.html" title=" " alt="" coords="819,408,954,435"/>
+<area shape="rect" id="node17" href="$instructions_8c.html" title=" " alt="" coords="783,333,905,360"/>
+</map>

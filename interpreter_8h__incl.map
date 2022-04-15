@@ -1,0 +1,14 @@
+<map id="lib/interpreter.h" name="lib/interpreter.h">
+<area shape="rect" id="node1" title=" " alt="" coords="386,5,494,32"/>
+<area shape="rect" id="node2" href="$instructions_8h.html" title=" " alt="" coords="327,155,427,181"/>
+<area shape="rect" id="node3" href="$classfile_8h.html" title=" " alt="" coords="329,304,410,331"/>
+<area shape="rect" id="node6" title=" " alt="" coords="589,453,664,480"/>
+<area shape="rect" id="node9" href="$jvm_8h.html" title=" " alt="" coords="258,80,313,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="290,528,355,555"/>
+<area shape="rect" id="node5" href="$operands__stack_8h.html" title=" " alt="" coords="385,379,564,405"/>
+<area shape="rect" id="node7" href="$operands__list_8h.html" title=" " alt="" coords="360,453,515,480"/>
+<area shape="rect" id="node8" title=" " alt="" coords="140,528,201,555"/>
+<area shape="rect" id="node10" href="$class__list_8h.html" title=" " alt="" coords="5,229,133,256"/>
+<area shape="rect" id="node11" href="$frames__stack_8h.html" title=" " alt="" coords="137,155,303,181"/>
+<area shape="rect" id="node12" href="$frames__list_8h.html" title=" " alt="" coords="208,229,349,256"/>
+</map>

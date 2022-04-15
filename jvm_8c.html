@@ -1,0 +1,799 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JVM: Referência ao ficheiro src/jvm.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JVM
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Localizar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('jvm_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro jvm.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;limits.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="instructions_8h_source.html">../lib/instructions.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="jvm_8h_source.html">../lib/jvm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="leitor__exibidor_8h_source.html">../lib/leitor_exibidor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="interpreter_8h_source.html">../lib/interpreter.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para jvm.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="jvm_8c__incl.png" border="0" usemap="#asrc_2jvm_8c" alt=""/></div>
+<map name="asrc_2jvm_8c" id="asrc_2jvm_8c">
+<area shape="rect" title=" " alt="" coords="218,5,294,32"/>
+<area shape="rect" title=" " alt="" coords="208,603,269,629"/>
+<area shape="rect" title=" " alt="" coords="43,229,107,256"/>
+<area shape="rect" title=" " alt="" coords="99,80,165,107"/>
+<area shape="rect" title=" " alt="" coords="189,80,253,107"/>
+<area shape="rect" href="instructions_8h.html" title=" " alt="" coords="329,229,458,256"/>
+<area shape="rect" href="jvm_8h.html" title=" " alt="" coords="429,155,512,181"/>
+<area shape="rect" href="leitor__exibidor_8h.html" title=" " alt="" coords="161,155,303,181"/>
+<area shape="rect" href="interpreter_8h.html" title=" " alt="" coords="429,80,549,107"/>
+<area shape="rect" href="classfile_8h.html" title=" " alt="" coords="331,379,413,405"/>
+<area shape="rect" title=" " alt="" coords="537,603,602,629"/>
+<area shape="rect" href="operands__stack_8h.html" title=" " alt="" coords="340,453,519,480"/>
+<area shape="rect" title=" " alt="" coords="607,528,681,555"/>
+<area shape="rect" href="operands__list_8h.html" title=" " alt="" coords="327,528,481,555"/>
+<area shape="rect" href="class__list_8h.html" title=" " alt="" coords="181,304,309,331"/>
+<area shape="rect" href="frames__stack_8h.html" title=" " alt="" coords="585,229,751,256"/>
+<area shape="rect" href="frames__list_8h.html" title=" " alt="" coords="585,304,727,331"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a18e1bfe9b9455a3291a2368ee500dbd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jvm_8h.html#a36df1d3591b105d3d4e4e00e7ee9498c">JVM</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jvm_8c.html#a18e1bfe9b9455a3291a2368ee500dbd6">inicializar</a> ()</td></tr>
+<tr class="memdesc:a18e1bfe9b9455a3291a2368ee500dbd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para inicializar a estrutura da JVM, alocando os campos da estrutura, e setando os valores iniciais.  <a href="jvm_8c.html#a18e1bfe9b9455a3291a2368ee500dbd6">Mais...</a><br /></td></tr>
+<tr class="separator:a18e1bfe9b9455a3291a2368ee500dbd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc71d20bef45f0510b4fd6643a40ed52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jvm_8c.html#abc71d20bef45f0510b4fd6643a40ed52">opcaoMenu</a> ()</td></tr>
+<tr class="memdesc:abc71d20bef45f0510b4fd6643a40ed52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para apresentar o menu para o usuário.  <a href="jvm_8c.html#abc71d20bef45f0510b4fd6643a40ed52">Mais...</a><br /></td></tr>
+<tr class="separator:abc71d20bef45f0510b4fd6643a40ed52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a161b5f38d45af3b436e3cce003d1fcd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfile_8h.html#a21bb256e580b3d3c1d8ad8456756edd3">Frame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jvm_8c.html#a161b5f38d45af3b436e3cce003d1fcd3">criarFrame</a> (char *classeCorrente, <a class="el" href="classfile_8h.html#a732cde1300aafb73b0ea6c2558a7a54f">u2</a> max_locals)</td></tr>
+<tr class="memdesc:a161b5f38d45af3b436e3cce003d1fcd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para criar um frame e inicializar com os valores default.  <a href="jvm_8c.html#a161b5f38d45af3b436e3cce003d1fcd3">Mais...</a><br /></td></tr>
+<tr class="separator:a161b5f38d45af3b436e3cce003d1fcd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a713d35f536711d10380226694fa8721b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jvm_8c.html#a713d35f536711d10380226694fa8721b">executarJVM</a> ()</td></tr>
+<tr class="memdesc:a713d35f536711d10380226694fa8721b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A função inicia a interpretação do arquivo .class, chamando outras funções da interpretação.  <a href="jvm_8c.html#a713d35f536711d10380226694fa8721b">Mais...</a><br /></td></tr>
+<tr class="separator:a713d35f536711d10380226694fa8721b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa7a25e5204a846c4ddfc30c7e1a0b89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jvm_8c.html#afa7a25e5204a846c4ddfc30c7e1a0b89">executarMetodo</a> (<a class="el" href="classfile_8h.html#a7cdfe6e00ac94b8438ea131298da174e">Method_info</a> *m, char *classeCorrente, int chamador)</td></tr>
+<tr class="memdesc:afa7a25e5204a846c4ddfc30c7e1a0b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que executa o código de um método.  <a href="jvm_8c.html#afa7a25e5204a846c4ddfc30c7e1a0b89">Mais...</a><br /></td></tr>
+<tr class="separator:afa7a25e5204a846c4ddfc30c7e1a0b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af72cd3dcd327df5f1c72c70d6db2cd06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jvm_8c.html#af72cd3dcd327df5f1c72c70d6db2cd06">interpretarCode</a> (<a class="el" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a> *code, <a class="el" href="classfile_8h.html#ae5be1f726785414dd1b77d60df074c9d">u4</a> length, <a class="el" href="classfile_8h.html#a7cdfe6e00ac94b8438ea131298da174e">Method_info</a> *m)</td></tr>
+<tr class="memdesc:af72cd3dcd327df5f1c72c70d6db2cd06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para interpretar as instruções do Code de um método.  <a href="jvm_8c.html#af72cd3dcd327df5f1c72c70d6db2cd06">Mais...</a><br /></td></tr>
+<tr class="separator:af72cd3dcd327df5f1c72c70d6db2cd06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd8553a0f086341f3d11f742610e83c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jvm_8c.html#aebd8553a0f086341f3d11f742610e83c">freeVetorLocais</a> (<a class="el" href="classfile_8h.html#a61f67f0e0131118690ddaabea9f14426">Vetor_locais</a> *v, <a class="el" href="classfile_8h.html#a732cde1300aafb73b0ea6c2558a7a54f">u2</a> vetor_length)</td></tr>
+<tr class="memdesc:aebd8553a0f086341f3d11f742610e83c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para liberar o vetor de variáveis locais da memória.  <a href="jvm_8c.html#aebd8553a0f086341f3d11f742610e83c">Mais...</a><br /></td></tr>
+<tr class="separator:aebd8553a0f086341f3d11f742610e83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9997d36718186df0d3c914fab466b788"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfile_8h.html#a732cde1300aafb73b0ea6c2558a7a54f">u2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jvm_8c.html#a9997d36718186df0d3c914fab466b788">verificaHandlerMetodo</a> (<a class="el" href="classfile_8h.html#a7cdfe6e00ac94b8438ea131298da174e">Method_info</a> *m)</td></tr>
+<tr class="memdesc:a9997d36718186df0d3c914fab466b788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para encontrar em um método o PC do handler da exceção lançada na JVM.  <a href="jvm_8c.html#a9997d36718186df0d3c914fab466b788">Mais...</a><br /></td></tr>
+<tr class="separator:a9997d36718186df0d3c914fab466b788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a2fcaf7218407641523857cea5e8c05"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jvm_8c.html#a5a2fcaf7218407641523857cea5e8c05">instrucaoBranch</a> (char *nomeInstrucao)</td></tr>
+<tr class="memdesc:a5a2fcaf7218407641523857cea5e8c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Avalia se a instrução passada como parâmetro é uma instrução do tipo branch.  <a href="jvm_8c.html#a5a2fcaf7218407641523857cea5e8c05">Mais...</a><br /></td></tr>
+<tr class="separator:a5a2fcaf7218407641523857cea5e8c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a414fc2572002991a93d18ec556606429"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jvm_8c.html#a414fc2572002991a93d18ec556606429">atualizarPCMetodoAtual</a> (<a class="el" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a> *code, <a class="el" href="classfile_8h.html#ae5be1f726785414dd1b77d60df074c9d">u4</a> length)</td></tr>
+<tr class="memdesc:a414fc2572002991a93d18ec556606429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para atualizar o PC, de acordo com a instrução branch previamente executada, verificando se o branch foi executado ou não.  <a href="jvm_8c.html#a414fc2572002991a93d18ec556606429">Mais...</a><br /></td></tr>
+<tr class="separator:a414fc2572002991a93d18ec556606429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c2f00c1122f0d570ec59446d475bcc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jvm_8c.html#a5c2f00c1122f0d570ec59446d475bcc0">ImprimeCode</a> (<a class="el" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a> *code, <a class="el" href="classfile_8h.html#ae5be1f726785414dd1b77d60df074c9d">u4</a> length)</td></tr>
+<tr class="memdesc:a5c2f00c1122f0d570ec59446d475bcc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para imprimir um Atributo Code de um método.  <a href="jvm_8c.html#a5c2f00c1122f0d570ec59446d475bcc0">Mais...</a><br /></td></tr>
+<tr class="separator:a5c2f00c1122f0d570ec59446d475bcc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:aaadd6bd4e20642a7a34ea6db728289ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jvm_8h.html#a36df1d3591b105d3d4e4e00e7ee9498c">JVM</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jvm_8c.html#aaadd6bd4e20642a7a34ea6db728289ae">jvm</a> = NULL</td></tr>
+<tr class="separator:aaadd6bd4e20642a7a34ea6db728289ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae739e0e613640b7872d11cb7b0ad2b3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="instructions_8h.html#ae3d426f873830945fb44a2e2f2731022">Instrucao</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jvm_8c.html#ae739e0e613640b7872d11cb7b0ad2b3d">instrucoes</a></td></tr>
+<tr class="separator:ae739e0e613640b7872d11cb7b0ad2b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af11353117deff3ccee7d6bd4740bd33e"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jvm_8c.html#af11353117deff3ccee7d6bd4740bd33e">func_ptr</a> [202])(<a class="el" href="classfile_8h.html#a21bb256e580b3d3c1d8ad8456756edd3">Frame</a> *, <a class="el" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a>, <a class="el" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a>)</td></tr>
+<tr class="separator:af11353117deff3ccee7d6bd4740bd33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a414fc2572002991a93d18ec556606429" name="a414fc2572002991a93d18ec556606429"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a414fc2572002991a93d18ec556606429">&#9670;&nbsp;</a></span>atualizarPCMetodoAtual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a> * atualizarPCMetodoAtual </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a> *&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfile_8h.html#ae5be1f726785414dd1b77d60df074c9d">u4</a>&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função para atualizar o PC, de acordo com a instrução branch previamente executada, verificando se o branch foi executado ou não. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>Ponteiro para o code do método atual </td></tr>
+    <tr><td class="paramname">length</td><td>Tamanho do código que deve ser analisado</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna o valor atualizado de PC </dd></dl>
+
+</div>
+</div>
+<a id="a161b5f38d45af3b436e3cce003d1fcd3" name="a161b5f38d45af3b436e3cce003d1fcd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a161b5f38d45af3b436e3cce003d1fcd3">&#9670;&nbsp;</a></span>criarFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfile_8h.html#a21bb256e580b3d3c1d8ad8456756edd3">Frame</a> * criarFrame </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>classeCorrente</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfile_8h.html#a732cde1300aafb73b0ea6c2558a7a54f">u2</a>&#160;</td>
+          <td class="paramname"><em>max_locals</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função para criar um frame e inicializar com os valores default. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">classeCorrente</td><td>Nome da classe corrente do frame </td></tr>
+    <tr><td class="paramname">max_locals</td><td>Tamanho do vetor de variáveis locais do frame</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>A função retorna um ponteiro para uma estrutura frame alocada </dd></dl>
+
+</div>
+</div>
+<a id="a713d35f536711d10380226694fa8721b" name="a713d35f536711d10380226694fa8721b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a713d35f536711d10380226694fa8721b">&#9670;&nbsp;</a></span>executarJVM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void executarJVM </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A função inicia a interpretação do arquivo .class, chamando outras funções da interpretação. </p>
+
+</div>
+</div>
+<a id="afa7a25e5204a846c4ddfc30c7e1a0b89" name="afa7a25e5204a846c4ddfc30c7e1a0b89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa7a25e5204a846c4ddfc30c7e1a0b89">&#9670;&nbsp;</a></span>executarMetodo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void executarMetodo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfile_8h.html#a7cdfe6e00ac94b8438ea131298da174e">Method_info</a> *&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>classeCorrente</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>chamador</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função que executa o código de um método. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>Estrutura <a class="el" href="structmethod__info.html">method_info</a> representando o método que deve ser executado </td></tr>
+    <tr><td class="paramname">classeCorrente</td><td>Ponteiro para a classe corrente do método </td></tr>
+    <tr><td class="paramname">chamador</td><td>Inteiro que é 1 se o chamador foi o arquivo da JVM, 2 se foi uma instrução do tipo invoke que vai executar um método </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aebd8553a0f086341f3d11f742610e83c" name="aebd8553a0f086341f3d11f742610e83c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebd8553a0f086341f3d11f742610e83c">&#9670;&nbsp;</a></span>freeVetorLocais()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void freeVetorLocais </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfile_8h.html#a61f67f0e0131118690ddaabea9f14426">Vetor_locais</a> *&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfile_8h.html#a732cde1300aafb73b0ea6c2558a7a54f">u2</a>&#160;</td>
+          <td class="paramname"><em>vetor_length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função para liberar o vetor de variáveis locais da memória. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>Vetor do tipo <code><a class="el" href="structvetor__locais.html">vetor_locais</a></code> que deve ser desalocado </td></tr>
+    <tr><td class="paramname">vetor_length</td><td>Tamanho do vetor que deve ser desalocado </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5c2f00c1122f0d570ec59446d475bcc0" name="a5c2f00c1122f0d570ec59446d475bcc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c2f00c1122f0d570ec59446d475bcc0">&#9670;&nbsp;</a></span>ImprimeCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ImprimeCode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a> *&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfile_8h.html#ae5be1f726785414dd1b77d60df074c9d">u4</a>&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função para imprimir um Atributo Code de um método. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>Ponteiro para o código que deve ser impresso </td></tr>
+    <tr><td class="paramname">length</td><td>Tamanho do código que deve ser percorrido </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a18e1bfe9b9455a3291a2368ee500dbd6" name="a18e1bfe9b9455a3291a2368ee500dbd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18e1bfe9b9455a3291a2368ee500dbd6">&#9670;&nbsp;</a></span>inicializar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jvm_8h.html#a36df1d3591b105d3d4e4e00e7ee9498c">JVM</a> * inicializar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função para inicializar a estrutura da JVM, alocando os campos da estrutura, e setando os valores iniciais. </p>
+<p >A função retorna a estrutura da JVM alocada. </p>
+
+</div>
+</div>
+<a id="a5a2fcaf7218407641523857cea5e8c05" name="a5a2fcaf7218407641523857cea5e8c05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a2fcaf7218407641523857cea5e8c05">&#9670;&nbsp;</a></span>instrucaoBranch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool instrucaoBranch </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nomeInstrucao</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Avalia se a instrução passada como parâmetro é uma instrução do tipo branch. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nomeInstrucao</td><td>Nome da instrução sendo analisada </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>A função retorna um booleano, indicando se a instrução é uma instrução do tipo branch ou não. </dd></dl>
+
+</div>
+</div>
+<a id="af72cd3dcd327df5f1c72c70d6db2cd06" name="af72cd3dcd327df5f1c72c70d6db2cd06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af72cd3dcd327df5f1c72c70d6db2cd06">&#9670;&nbsp;</a></span>interpretarCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void interpretarCode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a> *&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfile_8h.html#ae5be1f726785414dd1b77d60df074c9d">u4</a>&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfile_8h.html#a7cdfe6e00ac94b8438ea131298da174e">Method_info</a> *&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função para interpretar as instruções do Code de um método. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>Ponteiro para o código que deve ser interpretado </td></tr>
+    <tr><td class="paramname">length</td><td>Tamanho do código que deve ser interpretado </td></tr>
+    <tr><td class="paramname">m</td><td>Estrutura representando o método que deve ter seu code interpretado </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abc71d20bef45f0510b4fd6643a40ed52" name="abc71d20bef45f0510b4fd6643a40ed52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc71d20bef45f0510b4fd6643a40ed52">&#9670;&nbsp;</a></span>opcaoMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int opcaoMenu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função para apresentar o menu para o usuário. </p>
+<p >Retorna um inteiro, representando a opção escolhida pelo usuário </p>
+
+</div>
+</div>
+<a id="a9997d36718186df0d3c914fab466b788" name="a9997d36718186df0d3c914fab466b788"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9997d36718186df0d3c914fab466b788">&#9670;&nbsp;</a></span>verificaHandlerMetodo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfile_8h.html#a732cde1300aafb73b0ea6c2558a7a54f">u2</a> verificaHandlerMetodo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfile_8h.html#a7cdfe6e00ac94b8438ea131298da174e">Method_info</a> *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função para encontrar em um método o PC do handler da exceção lançada na JVM. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>A estrutura do método no qual o handler da exceção será buscado </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>A função retorna o PC do handler do método, ou o número máximo short, caso o handler não seja encontrado </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das variáveis</h2>
+<a id="af11353117deff3ccee7d6bd4740bd33e" name="af11353117deff3ccee7d6bd4740bd33e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af11353117deff3ccee7d6bd4740bd33e">&#9670;&nbsp;</a></span>func_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* func_ptr[202])(<a class="el" href="classfile_8h.html#a21bb256e580b3d3c1d8ad8456756edd3">Frame</a> *, <a class="el" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a>, <a class="el" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfile_8h.html#a21bb256e580b3d3c1d8ad8456756edd3">Frame</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <a class="code hl_function" href="interpreter_8h.html#a507e45e97e6c56539ab4352c42d8b6f0">nop_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a76ec943602803861252160c49d3cc4f6">aconst_null_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a6b636e2ac0141a478145c8fafba0e829">iconst_m1_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a3730dff447f987e4ced6a7c73a66b5b1">iconst_0_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a62486afd987cf06fec927c7f527995f4">iconst_1_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a83d3a2730c486a1e485c794706b2e318">iconst_2_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a50f5b2711682c4dba5becb1c240f0be6">iconst_3_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a355c08418b53a7a7e4a7af2056ca6479">iconst_4_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a37c4d55c8d295fc0bdfd9b8ef534029e">iconst_5_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a60258997858dc3e21e9a10a24f17368c">lconst_0_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a6c072ff6b7e58d8c367952658948f005">lconst_1_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a972b8c792f1649b4080c2733925a05b0">fconst_0_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a302d1067c43ce306935335ceb725d383">fconst_1_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a2e5d0467e977be0857753f554daa4e16">fconst_2_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a55d2c46ab40100e475a197d8de96eb44">dconst_0_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a06d2da91ce897fad2af4291d799afeb2">dconst_1_impl</a>,<a class="code hl_function" href="interpreter_8h.html#af29bf7ab99ea4eb0e41a20eaacf9a985">bipush_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a974758c292f828de3ae770bb836f78f8">sipush_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a55115dbf9384ce066daee9e96c73f489">ldc_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a5aec4b3cd5538dd541760232b574d15c">ldc_w_impl</a>,<a class="code hl_function" href="interpreter_8h.html#aafe25c2b9b58c02ec16967e140cd91ed">ldc2_w_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ace49a268ccdbe500278ce1b6a689cb0d">iload_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a7a70787f320c63a836e8612cfed2710a">lload_impl</a>,<a class="code hl_function" href="interpreter_8h.html#aa51dd50b44850f4d54bddc48a6ddbbdf">fload_impl</a>,<a class="code hl_function" href="interpreter_8h.html#aa28c2cc5c7e40f3668a5a5aebef83d0d">dload_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a045df855e056fd21d9735351f94a0142">aload_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a37127d7a51b20176bc98c6a123b0c898">iload_0_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a72a2f47ed998680b590278156da1889b">iload_1_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a9b5bd3cf1225807dc53903b332849941">iload_2_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a0f18cfd920161f274e7710e8180f77f8">iload_3_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a6c0d7e213c87e416a5aabb99cf95dd84">lload_0_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a800b8501d1ecc436c0ab5b4427d59577">lload_1_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a207ac8bf9e05efcfedabe5820cd8a569">lload_2_impl</a>,<a class="code hl_function" href="interpreter_8h.html#adf7284df25db01c5093022ed325530f1">lload_3_impl</a>,<a class="code hl_function" href="interpreter_8h.html#aebd8175da28aa12856327da2623e3a7b">fload_0_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ab05d9f1b909ddd08c949ff9b32274638">fload_1_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a5b2b878fda3cc09d7c26893af216aab6">fload_2_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a640bc526803b685c90c781658bd09712">fload_3_impl</a>,<a class="code hl_function" href="interpreter_8h.html#aa7e38d0b14773bfd5c7e000943e06672">dload_0_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a21c86c829bce65e5a5438853b3414216">dload_1_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a2e040f5868ecb56524db7208b206f297">dload_2_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ac7b2ceb24092474ea13462bf0f39e89f">dload_3_impl</a>,<a class="code hl_function" href="interpreter_8h.html#af1123e7992bae8d28bb1ab0b5957f13c">aload_0_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a300c0b3711a378062f78e0443b464633">aload_1_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a19eba274d273077e839ecbf5eefdb843">aload_2_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ad09fc74b67068358c1a58dddce6e07eb">aload_3_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a5d4f5f16654ce9f88712b8b8bcda637e">iaload_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a81b1eeb53a1f54fa2d899ffea4844a0f">laload_impl</a>,<a class="code hl_function" href="interpreter_8h.html#af10332e31ccbae90ec93ef45dfd7ad82">faload_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ac99da319d1b953a019e27a1e82f6801b">daload_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a97eab79826616be79a70e80115ee4fb9">aaload_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ae2d1d2a9cd7b8a3ad441492c955b7b92">baload_impl</a>,<a class="code hl_function" href="interpreter_8h.html#acad99061275207e9d34998576f9e8dbd">caload_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a1fa4c5d721f39a81b1228fcd36ce90c9">saload_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a300a83fbbf9b42f30f434faea33b9ab4">istore_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ae6f99897b80e616314169f747d9ffbf9">lstore_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a34986f6d15b0845a6a7069b7458b4d6b">fstore_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a14251365279a3ed6ae993648f88263be">dstore_impl</a>,<a class="code hl_function" href="interpreter_8h.html#af01388760fa281a776c3595a3a7537c2">astore_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ad54f9e3d934b3bc93950710bcef4877d">istore_0_impl</a>,<a class="code hl_function" href="interpreter_8h.html#aefac94da5de3c06e0770c68307f3634a">istore_1_impl</a>,<a class="code hl_function" href="interpreter_8h.html#acef798cf5d7f30a4f590046bc7a72c8c">istore_2_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a99c1764936f3a2a65a13eb7bfaca5539">istore_3_impl</a>,<a class="code hl_function" href="interpreter_8h.html#afb9ec956d414b20f33b815585ea046b5">lstore_0_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a8134c4a9b0fa292b1776194b79b67bfe">lstore_1_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a74c5ce3a6eb5ef1423385ba1e1c8123b">lstore_2_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ad2e07dfc46701e681897c49250e420bd">lstore_3_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a6e2dce797c9ca6387fc5ac483602f873">fstore_0_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a5e519dd79dc9d531fe066213b8ecb883">fstore_1_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a03207e18018427b8a0cfbcfc72310892">fstore_2_impl</a>,<a class="code hl_function" href="interpreter_8h.html#abb8ddef838515e38662daad7c492e610">fstore_3_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a6af336a823aca16563da1d060657cb42">dstore_0_impl</a>,<a class="code hl_function" href="interpreter_8h.html#aca9a1099e214885a5176b1a2f5f1115a">dstore_1_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ae8c13b18f155b75a02b42d9ac91e8b02">dstore_2_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a299e9a2f00d3668cb038494adece8951">dstore_3_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ae97ccab2cfdbdb9aaf625472d1aea129">astore_0_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ae21833d1604736bac5bcd1508d61f187">astore_1_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a2a7a293261a82444354d123db76df7ae">astore_2_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a7dff8c45ae2dabf434ca64b0525fed97">astore_3_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a097a92de1aaa2ae293722aa233c1add1">iastore_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a0d7eb026fa13f0db6b99f0084f3e6ba6">lastore_impl</a>,<a class="code hl_function" href="interpreter_8h.html#adc728988c04b677132732f8add27a265">fastore_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a83ee790f8d0c8169801133e92174e504">dastore_impl</a>,<a class="code hl_function" href="interpreter_8h.html#adc89b64647975ead61bb20cd0308adfd">aastore_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a5a797d824d3c73a196516bc87027af47">bastore_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a53314be421cfff62b262ae8b1a4996e1">castore_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a9d9db5db2a2a5c388b50d08fa0f134f2">sastore_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ab589643b003d9d93c59378b823a46adf">pop_fantasma</a>,<a class="code hl_function" href="interpreter_8h.html#a21cef798381bc5428b755b1cc3102e42">pop2_fantasma</a>,<a class="code hl_function" href="interpreter_8h.html#adc6c897a29bacc93b5697bd244d5ae84">dup_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a34e30c78f41da27829979b73494095dc">dup_x1_impl</a>,<a class="code hl_function" href="interpreter_8h.html#abe186934fb5ef8abe5560672d12c3320">dup_x2_impl</a>,<a class="code hl_function" href="interpreter_8h.html#aa069bda088332a9590bf62f731c74ad9">dup2_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a408ad29e89a521dd460906e48fa11892">dup2_x1_impl</a>,<a class="code hl_function" href="interpreter_8h.html#aced57a633b885d72e23a5a13cb6596c9">dup2_x2_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a7f5ac18e186d5971755f900aabc091e3">swap_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a0705f9265ad20903837306d7857f0ba7">iadd_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a81658a89f2d57cb261c6943427bcf688">ladd_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a7a3c70c7da25984b3428a67d3d5686ba">fadd_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a0c9ab1ba0c6b830ccc241a478b549fc1">dadd_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a0c51083d6e6295d96ffbfefbd4c62ff7">isub_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a8cb9adcf77974eec9602bfbe5eda2f19">lsub_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a7c948dfa5a781830bf3e913e321ccbbd">fsub_impl</a>,<a class="code hl_function" href="interpreter_8h.html#acacf942750a72d2f3e26109ba067d716">dsub_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a00c90bdbf1d78c448cc98243e7994da5">imul_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a7340ecf48ab9383e0922a8e34232490d">lmul_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a1b22d672b0a642abda5b22d2b2d149c5">fmul_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a7cc19a8d96847baba810dcbdcbb66158">dmul_impl</a>,<a class="code hl_function" href="interpreter_8h.html#abb1540defa8a45e35e3ecce7ec0a875f">idiv_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a5f58783dbcc60fa2a2e516f244d2aeb5">ldiv_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a8f4afff71a27970c89cd7b6fee81528b">fdiv_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a3e00c3d8b23ca58fc7e95ab7649d9808">ddiv_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a1149c131b75b0c52342907f7ae337243">irem_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a18bdfc138286084c7f78971711cff41f">lrem_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a0f3522992a93e46f117fe0b70f0ba790">frem_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a3dd8b6515774e681b5c7450f96805dbf">drem_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ae56c49112623c487c77b7f5280625397">ineg_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ac779087ad6378b83ca20381b7f5a9d96">lneg_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a1cb0938758dff0261eb732d952570b8c">fneg_impl</a>,<a class="code hl_function" href="interpreter_8h.html#af37af145ce7a05e7ba730fbbd9f60ca6">dneg_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a1751b28bc78c96cfe9ebb1c01bd084aa">ishl_impl</a>,<a class="code hl_function" href="interpreter_8h.html#afb835aba9f728ce5807d7315cb2e0cd9">lshl_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a6b4bb348fcd8df9c679d8cbe17a4beda">ishr_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a3c426569abbc7317b3054bdd47f2bb18">lshr_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ae628ce179b6b63e89dab3353e3f8d055">iushr_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a897e9ebf113e3ebb94cb84b3518a3bb2">lushr_impl</a>,<a class="code hl_function" href="interpreter_8h.html#aaf52b13ead1fb7d17081c45549ca116f">iand_impl</a>,<a class="code hl_function" href="interpreter_8h.html#acedf2ff24b371053d1b637ebe84a8e40">land_impl</a>,<a class="code hl_function" href="interpreter_8h.html#aea88d108106fc84c0f8d6095b3705aca">ior_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a6e99e6d05a1054781cf223776c85aca2">lor_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a74905166c5babf6930eaa97fd80e73e5">ixor_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ae608ae3432ad89df99afb45de8d7e025">lxor_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a7c2901371cf537ccdd7af317e2f1d6af">iinc_fantasma</a>,<a class="code hl_function" href="interpreter_8h.html#a65579db0e25f2f83c88be65e62b1d1a5">i2l_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a87e203e2a65d4e8b19b6010a83a51126">i2f_impl</a>,<a class="code hl_function" href="interpreter_8h.html#acad2b720d26d7522b93c9b4a7a71c1cd">i2d_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a79c1cd84788154239326d149c6676a53">l2i_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a00fa75b6083c6dec728a0622c674b191">l2f_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a90565642fb6b84aeed3b94658e87eaec">l2d_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a005dd24387bd0c04806cf16483961273">f2i_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ade411c5e7aef7d2f1beae3511fe31bb2">f2l_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a32ca1c046eb4a2eab85d5209304cd9d3">f2d_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a361b5708f73a2a0424499eb962628325">d2i_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a233591cb126807761f03cf54b1c7dd87">d2l_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a5716b756dc713d03db89fba9ce6d141e">d2f_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a08056198cedf2059d662a1e184559aea">i2b_impl</a>,<a class="code hl_function" href="interpreter_8h.html#af754510950273ffc1f5875762a537186">i2c_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ac39d26a5cc59931cf4777a3aebca6e8a">i2s_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ad7d92bae12bf6bf2136964d4453c1a32">lcmp_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ae87f484f7c787b45f55434b7ad02d1d1">fcmpl_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a313a2b366473539973f887224a94bfd0">fcmpg_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a7dd5fa2ae0f2b7eecb86f8f60b151b5a">dcmpl_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a2ec6a84ecb0a83a2f34296beb6fa21a1">dcmpg_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a3b2d03fbf656e08c1500079f9481946a">ifeq_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a5d31b7b4320964a9557ea0e283aeda9e">ifne_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ab398ecfa03c6abc5f955cc1f2d372b6a">iflt_impl</a>,<a class="code hl_function" href="interpreter_8h.html#af9e8c0058dd7477984c93375ff9b4da3">ifge_impl</a>,<a class="code hl_function" href="interpreter_8h.html#aef3f8af08a4e92137181f76cb8139ab7">ifgt_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a003785068c4198d006f741920e9ce1d4">ifle_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a9f9623fed6589335e78fdda9e8167185">if_icmpeq_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ae1b560ed8a2a47f66e9101a47464d6aa">if_icmpne_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ab8cd9dc2da80fed17374c79517fee882">if_icmplt_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a3e5018aef17f11ad90ec7cec60bc27bf">if_icmpge_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a5645664b18eea66e013ba1d6778a2b3a">if_icmpgt_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a2371e15ea0316d30a2a5c0fae928974b">if_icmple_impl</a>,<a class="code hl_function" href="interpreter_8h.html#aa405f67ae4d9879717d3cbe94108338c">acmpeq_impl</a>,<a class="code hl_function" href="interpreter_8h.html#aa8fc1214f8635cc5bc151133950c930c">acmpne_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a5d5b8c564571a23868e5864700809237">inst_goto_impl</a>,<a class="code hl_function" href="interpreter_8h.html#afae56fefeca5a2950f3a7c3c0280ec2b">jsr_impl</a>,<a class="code hl_function" href="interpreter_8h.html#aa28f48dfdf5fb34d0d3b000f211e4b29">ret_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a078a54b681468f1813fb0914c9cd5da1">tableswitch_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a244213c4a9ad92c123bd6f97ae11554b">lookupswitch_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a3464b3e2cb4894d03e0c1f248e7ba2cb">ireturn_impl</a>,<a class="code hl_function" href="interpreter_8h.html#add5cb127241c57ccd193716fadd849da">lreturn_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ab32e50753f2824c1e87e97e51e9fa842">freturn_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ae8259f9d27cf6220370d80d303d965ae">dreturn_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ae840cb6d1701416adedcc1341e06e17b">areturn_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a08683445d1f3c1b73cc406954e5d57a4">inst_return_impl</a>,<a class="code hl_function" href="interpreter_8h.html#acee29ff3bb2ed306c725bd20a012e8f9">getstatic_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a09bba37234056cf86fa73f6217963655">putstatic_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a64369d23265e0f0933fb6e2e22b9fbae">getfield_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a90bb050ea3ec0a7c584d583bf1ddf412">putfield_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a11d5321947844fd6826abedcd8dedde2">invokevirtual_impl</a>,<a class="code hl_function" href="interpreter_8h.html#aeb64e406ff176ac6632658552fe66999">invokespecial_impl</a>,<a class="code hl_function" href="interpreter_8h.html#aff2251d8452a64968e4601e4575e5897">invokestatic_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a28aa0f8248358a4f56e39a1516b4be18">invokeinterface_fantasma</a>,<a class="code hl_function" href="interpreter_8h.html#a14f7f3de56d12df295130a84c4c0dc1b">invokedynamic_fantasma</a>,<a class="code hl_function" href="interpreter_8h.html#ac751eccfb4287f55d9bcb0ffe12de64d">inst_new_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ab6dfafc261589fe50338e0da432183a3">newarray_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a2f9bf9092b9cd3f7f6b6945393c8b4fe">anewarray_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a96968895a05fc61f307d39d10eebb17e">arraylength_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a70d25e92ed8b9609b0ea355a97c815a5">athrow_impl</a>,<a class="code hl_function" href="interpreter_8h.html#abf5b09ae1803221309f1e3e7a2569d40">checkcast_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a576a52dc2f97ceedaf5f9cef26ba6e8e">instanceof_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a5bf5d9fcfa3c21087853133d1ec44c86">monitorenter_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a5a618bcf65da750ac3228efa2a24e706">monitorexit_impl</a>,<a class="code hl_function" href="interpreter_8h.html#aca67261974d3ca2566d71474a6119910">wide_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a4f528881290d5b68d4467509600a1e5a">multianewarray_fantasma</a>,<a class="code hl_function" href="interpreter_8h.html#a6640f5fb7ddf516427c8fb60de6723cf">ifnull_impl</a>,<a class="code hl_function" href="interpreter_8h.html#a0e443af7e93163b903da7bf86ace2451">ifnonnull_impl</a>,<a class="code hl_function" href="interpreter_8h.html#ac7957d393c5cc302d5b8db9f6a4b74b2">goto_w_impl</a>,<a class="code hl_function" href="interpreter_8h.html#afbbd506576ceb1bc527f2c11513c0acb">jsr_w_impl</a>}</div>
+<div class="ttc" id="ainterpreter_8h_html_a003785068c4198d006f741920e9ce1d4"><div class="ttname"><a href="interpreter_8h.html#a003785068c4198d006f741920e9ce1d4">ifle_impl</a></div><div class="ttdeci">void ifle_impl(Frame *f, u1 branchbyte1, u1 branchbyte2)</div><div class="ttdoc">Branch será efetuado se o inteiro no topo da pilha for menor do que o valor zero.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1897</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a005dd24387bd0c04806cf16483961273"><div class="ttname"><a href="interpreter_8h.html#a005dd24387bd0c04806cf16483961273">f2i_impl</a></div><div class="ttdeci">void f2i_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdef"><b>Definition:</b> interpreter.c:1638</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a00c90bdbf1d78c448cc98243e7994da5"><div class="ttname"><a href="interpreter_8h.html#a00c90bdbf1d78c448cc98243e7994da5">imul_impl</a></div><div class="ttdeci">void imul_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa uma multiplicação de int.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1137</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a00fa75b6083c6dec728a0622c674b191"><div class="ttname"><a href="interpreter_8h.html#a00fa75b6083c6dec728a0622c674b191">l2f_impl</a></div><div class="ttdeci">void l2f_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdef"><b>Definition:</b> interpreter.c:1615</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a03207e18018427b8a0cfbcfc72310892"><div class="ttname"><a href="interpreter_8h.html#a03207e18018427b8a0cfbcfc72310892">fstore_2_impl</a></div><div class="ttdeci">void fstore_2_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um float na posição 2 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:784</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a045df855e056fd21d9735351f94a0142"><div class="ttname"><a href="interpreter_8h.html#a045df855e056fd21d9735351f94a0142">aload_impl</a></div><div class="ttdeci">void aload_impl(Frame *f, u1 index, u1 par1)</div><div class="ttdoc">Carrega uma referência do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:497</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a06d2da91ce897fad2af4291d799afeb2"><div class="ttname"><a href="interpreter_8h.html#a06d2da91ce897fad2af4291d799afeb2">dconst_1_impl</a></div><div class="ttdeci">void dconst_1_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Faz o push para a pilha de operando da constante 1 double.</div><div class="ttdef"><b>Definition:</b> interpreter.c:350</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a0705f9265ad20903837306d7857f0ba7"><div class="ttname"><a href="interpreter_8h.html#a0705f9265ad20903837306d7857f0ba7">iadd_impl</a></div><div class="ttdeci">void iadd_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa uma soma de int.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1018</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a078a54b681468f1813fb0914c9cd5da1"><div class="ttname"><a href="interpreter_8h.html#a078a54b681468f1813fb0914c9cd5da1">tableswitch_impl</a></div><div class="ttdeci">void tableswitch_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Instrução para acessar uma jump table por index e efetuar um jump.</div><div class="ttdef"><b>Definition:</b> interpreter.c:2022</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a08056198cedf2059d662a1e184559aea"><div class="ttname"><a href="interpreter_8h.html#a08056198cedf2059d662a1e184559aea">i2b_impl</a></div><div class="ttdeci">void i2b_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdef"><b>Definition:</b> interpreter.c:1706</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a08683445d1f3c1b73cc406954e5d57a4"><div class="ttname"><a href="interpreter_8h.html#a08683445d1f3c1b73cc406954e5d57a4">inst_return_impl</a></div><div class="ttdeci">void inst_return_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Instrução para retornar void de um método.</div><div class="ttdef"><b>Definition:</b> interpreter.c:2072</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a097a92de1aaa2ae293722aa233c1add1"><div class="ttname"><a href="interpreter_8h.html#a097a92de1aaa2ae293722aa233c1add1">iastore_impl</a></div><div class="ttdeci">void iastore_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um valor int em um array.</div><div class="ttdef"><b>Definition:</b> interpreter.c:852</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a09bba37234056cf86fa73f6217963655"><div class="ttname"><a href="interpreter_8h.html#a09bba37234056cf86fa73f6217963655">putstatic_impl</a></div><div class="ttdeci">void putstatic_impl(Frame *f, u1 indexbyte1, u1 indexbyte2)</div><div class="ttdoc">Instrução para setar um field estático em uma classe.</div><div class="ttdef"><b>Definition:</b> interpreter.c:2134</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a0c51083d6e6295d96ffbfefbd4c62ff7"><div class="ttname"><a href="interpreter_8h.html#a0c51083d6e6295d96ffbfefbd4c62ff7">isub_impl</a></div><div class="ttdeci">void isub_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa uma subtração de int.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1079</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a0c9ab1ba0c6b830ccc241a478b549fc1"><div class="ttname"><a href="interpreter_8h.html#a0c9ab1ba0c6b830ccc241a478b549fc1">dadd_impl</a></div><div class="ttdeci">void dadd_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa uma soma de double.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1061</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a0d7eb026fa13f0db6b99f0084f3e6ba6"><div class="ttname"><a href="interpreter_8h.html#a0d7eb026fa13f0db6b99f0084f3e6ba6">lastore_impl</a></div><div class="ttdeci">void lastore_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um valor long em um array.</div><div class="ttdef"><b>Definition:</b> interpreter.c:861</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a0e443af7e93163b903da7bf86ace2451"><div class="ttname"><a href="interpreter_8h.html#a0e443af7e93163b903da7bf86ace2451">ifnonnull_impl</a></div><div class="ttdeci">void ifnonnull_impl(Frame *f, u1 branchbyte1, u1 branchbyte2)</div><div class="ttdoc">Instrução que irá efetuar um branch caso a referência no topo da pilha não seja nula.</div><div class="ttdef"><b>Definition:</b> interpreter.c:3210</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a0f18cfd920161f274e7710e8180f77f8"><div class="ttname"><a href="interpreter_8h.html#a0f18cfd920161f274e7710e8180f77f8">iload_3_impl</a></div><div class="ttdeci">void iload_3_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um valor int da posição 3 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:519</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a0f3522992a93e46f117fe0b70f0ba790"><div class="ttname"><a href="interpreter_8h.html#a0f3522992a93e46f117fe0b70f0ba790">frem_impl</a></div><div class="ttdeci">void frem_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Calcula o resto float da divisão entre dois operandos.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1303</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a1149c131b75b0c52342907f7ae337243"><div class="ttname"><a href="interpreter_8h.html#a1149c131b75b0c52342907f7ae337243">irem_impl</a></div><div class="ttdeci">void irem_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Calcula o resto int da divisão entre dois operandos.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1270</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a11d5321947844fd6826abedcd8dedde2"><div class="ttname"><a href="interpreter_8h.html#a11d5321947844fd6826abedcd8dedde2">invokevirtual_impl</a></div><div class="ttdeci">void invokevirtual_impl(Frame *f, u1 indexbyte1, u1 indexbyte2)</div><div class="ttdoc">Função para invocar um método de instância, geralmente utilizada para impressão em tela.</div><div class="ttdef"><b>Definition:</b> interpreter.c:2344</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a14251365279a3ed6ae993648f88263be"><div class="ttname"><a href="interpreter_8h.html#a14251365279a3ed6ae993648f88263be">dstore_impl</a></div><div class="ttdeci">void dstore_impl(Frame *f, u1 index, u1 par1)</div><div class="ttdoc">Armazena um double no vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:708</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a14f7f3de56d12df295130a84c4c0dc1b"><div class="ttname"><a href="interpreter_8h.html#a14f7f3de56d12df295130a84c4c0dc1b">invokedynamic_fantasma</a></div><div class="ttdeci">void invokedynamic_fantasma(Frame *par0, u1 par1, u1 par2)</div><div class="ttdoc">Instrução para invocar um método dinâmico. Essa instrução só existe para criar uma posição &quot;falsa&quot; no...</div><div class="ttdef"><b>Definition:</b> interpreter.c:2802</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a1751b28bc78c96cfe9ebb1c01bd084aa"><div class="ttname"><a href="interpreter_8h.html#a1751b28bc78c96cfe9ebb1c01bd084aa">ishl_impl</a></div><div class="ttdeci">void ishl_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa um shift left em um int.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1379</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a18bdfc138286084c7f78971711cff41f"><div class="ttname"><a href="interpreter_8h.html#a18bdfc138286084c7f78971711cff41f">lrem_impl</a></div><div class="ttdeci">void lrem_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Calcula o resto long da divisão entre dois operandos.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1283</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a19eba274d273077e839ecbf5eefdb843"><div class="ttname"><a href="interpreter_8h.html#a19eba274d273077e839ecbf5eefdb843">aload_2_impl</a></div><div class="ttdeci">void aload_2_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega uma referência da posição 2 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:602</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a1b22d672b0a642abda5b22d2b2d149c5"><div class="ttname"><a href="interpreter_8h.html#a1b22d672b0a642abda5b22d2b2d149c5">fmul_impl</a></div><div class="ttdeci">void fmul_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa uma multiplicação de float.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1165</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a1cb0938758dff0261eb732d952570b8c"><div class="ttname"><a href="interpreter_8h.html#a1cb0938758dff0261eb732d952570b8c">fneg_impl</a></div><div class="ttdeci">void fneg_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Inverte o sinal de um float.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1355</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a1fa4c5d721f39a81b1228fcd36ce90c9"><div class="ttname"><a href="interpreter_8h.html#a1fa4c5d721f39a81b1228fcd36ce90c9">saload_impl</a></div><div class="ttdeci">void saload_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um short de um array.</div><div class="ttdef"><b>Definition:</b> interpreter.c:681</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a207ac8bf9e05efcfedabe5820cd8a569"><div class="ttname"><a href="interpreter_8h.html#a207ac8bf9e05efcfedabe5820cd8a569">lload_2_impl</a></div><div class="ttdeci">void lload_2_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um valor long da posição 2 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:537</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a21c86c829bce65e5a5438853b3414216"><div class="ttname"><a href="interpreter_8h.html#a21c86c829bce65e5a5438853b3414216">dload_1_impl</a></div><div class="ttdeci">void dload_1_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um valor double da posição 1 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:575</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a21cef798381bc5428b755b1cc3102e42"><div class="ttname"><a href="interpreter_8h.html#a21cef798381bc5428b755b1cc3102e42">pop2_fantasma</a></div><div class="ttdeci">void pop2_fantasma(Frame *par0, u1 par1, u1 par2)</div><div class="ttdoc">PlaceHolder para ocupar posicao no vetor de posicoes da instrucao pop2.</div><div class="ttdef"><b>Definition:</b> interpreter.c:949</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a233591cb126807761f03cf54b1c7dd87"><div class="ttname"><a href="interpreter_8h.html#a233591cb126807761f03cf54b1c7dd87">d2l_impl</a></div><div class="ttdeci">void d2l_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdef"><b>Definition:</b> interpreter.c:1675</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a2371e15ea0316d30a2a5c0fae928974b"><div class="ttname"><a href="interpreter_8h.html#a2371e15ea0316d30a2a5c0fae928974b">if_icmple_impl</a></div><div class="ttdeci">void if_icmple_impl(Frame *f, u1 branchbyte1, u1 branchbyte2)</div><div class="ttdoc">Branch será efetuado se o inteiro no topo da pilha for maior do que o próximo inteiro na pilha.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1968</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a244213c4a9ad92c123bd6f97ae11554b"><div class="ttname"><a href="interpreter_8h.html#a244213c4a9ad92c123bd6f97ae11554b">lookupswitch_impl</a></div><div class="ttdeci">void lookupswitch_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Instrução para acessar uma chave em um jump table e efetuar um jump.</div><div class="ttdef"><b>Definition:</b> interpreter.c:2026</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a28aa0f8248358a4f56e39a1516b4be18"><div class="ttname"><a href="interpreter_8h.html#a28aa0f8248358a4f56e39a1516b4be18">invokeinterface_fantasma</a></div><div class="ttdeci">void invokeinterface_fantasma(Frame *par0, u1 par1, u1 par2)</div><div class="ttdoc">Instrução utilizada como placeholder, para ocupar a posição no array de instruções,...</div><div class="ttdef"><b>Definition:</b> interpreter.c:2798</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a299e9a2f00d3668cb038494adece8951"><div class="ttname"><a href="interpreter_8h.html#a299e9a2f00d3668cb038494adece8951">dstore_3_impl</a></div><div class="ttdeci">void dstore_3_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um double na posição 3 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:818</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a2a7a293261a82444354d123db76df7ae"><div class="ttname"><a href="interpreter_8h.html#a2a7a293261a82444354d123db76df7ae">astore_2_impl</a></div><div class="ttdeci">void astore_2_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena uma referência na posição 2 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:840</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a2e040f5868ecb56524db7208b206f297"><div class="ttname"><a href="interpreter_8h.html#a2e040f5868ecb56524db7208b206f297">dload_2_impl</a></div><div class="ttdeci">void dload_2_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um valor double da posição 2 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:580</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a2e5d0467e977be0857753f554daa4e16"><div class="ttname"><a href="interpreter_8h.html#a2e5d0467e977be0857753f554daa4e16">fconst_2_impl</a></div><div class="ttdeci">void fconst_2_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Faz o push para a pilha de operando da constante 2 float.</div><div class="ttdef"><b>Definition:</b> interpreter.c:332</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a2ec6a84ecb0a83a2f34296beb6fa21a1"><div class="ttname"><a href="interpreter_8h.html#a2ec6a84ecb0a83a2f34296beb6fa21a1">dcmpg_impl</a></div><div class="ttdeci">void dcmpg_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Instrução que compara valores double oriundos da pilha de operandos.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1818</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a2f9bf9092b9cd3f7f6b6945393c8b4fe"><div class="ttname"><a href="interpreter_8h.html#a2f9bf9092b9cd3f7f6b6945393c8b4fe">anewarray_impl</a></div><div class="ttdeci">void anewarray_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Criar um novo array do tipo referência.</div><div class="ttdef"><b>Definition:</b> interpreter.c:2997</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a300a83fbbf9b42f30f434faea33b9ab4"><div class="ttname"><a href="interpreter_8h.html#a300a83fbbf9b42f30f434faea33b9ab4">istore_impl</a></div><div class="ttdeci">void istore_impl(Frame *f, u1 index, u1 par1)</div><div class="ttdoc">Armazena um int no vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:690</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a300c0b3711a378062f78e0443b464633"><div class="ttname"><a href="interpreter_8h.html#a300c0b3711a378062f78e0443b464633">aload_1_impl</a></div><div class="ttdeci">void aload_1_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega uma referência da posição 1 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:597</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a302d1067c43ce306935335ceb725d383"><div class="ttname"><a href="interpreter_8h.html#a302d1067c43ce306935335ceb725d383">fconst_1_impl</a></div><div class="ttdeci">void fconst_1_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Faz o push para a pilha de operando da constante 1 float.</div><div class="ttdef"><b>Definition:</b> interpreter.c:325</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a313a2b366473539973f887224a94bfd0"><div class="ttname"><a href="interpreter_8h.html#a313a2b366473539973f887224a94bfd0">fcmpg_impl</a></div><div class="ttdeci">void fcmpg_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Instrução que compara valores float oriundos da pilha de operandos.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1777</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a32ca1c046eb4a2eab85d5209304cd9d3"><div class="ttname"><a href="interpreter_8h.html#a32ca1c046eb4a2eab85d5209304cd9d3">f2d_impl</a></div><div class="ttdeci">void f2d_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdef"><b>Definition:</b> interpreter.c:1654</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a3464b3e2cb4894d03e0c1f248e7ba2cb"><div class="ttname"><a href="interpreter_8h.html#a3464b3e2cb4894d03e0c1f248e7ba2cb">ireturn_impl</a></div><div class="ttdeci">void ireturn_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Instrução para retornar um inteiro de um método.</div><div class="ttdef"><b>Definition:</b> interpreter.c:2030</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a34986f6d15b0845a6a7069b7458b4d6b"><div class="ttname"><a href="interpreter_8h.html#a34986f6d15b0845a6a7069b7458b4d6b">fstore_impl</a></div><div class="ttdeci">void fstore_impl(Frame *f, u1 index, u1 par1)</div><div class="ttdoc">Armazena um float no vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:703</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a34e30c78f41da27829979b73494095dc"><div class="ttname"><a href="interpreter_8h.html#a34e30c78f41da27829979b73494095dc">dup_x1_impl</a></div><div class="ttdeci">void dup_x1_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Duplica o valor no topo da pilha de operandos e insere dois valores a baixo.</div><div class="ttdef"><b>Definition:</b> interpreter.c:958</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a355c08418b53a7a7e4a7af2056ca6479"><div class="ttname"><a href="interpreter_8h.html#a355c08418b53a7a7e4a7af2056ca6479">iconst_4_impl</a></div><div class="ttdeci">void iconst_4_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Faz o push para a pilha de operando da constante 4 int.</div><div class="ttdef"><b>Definition:</b> interpreter.c:286</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a361b5708f73a2a0424499eb962628325"><div class="ttname"><a href="interpreter_8h.html#a361b5708f73a2a0424499eb962628325">d2i_impl</a></div><div class="ttdeci">void d2i_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdef"><b>Definition:</b> interpreter.c:1664</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a37127d7a51b20176bc98c6a123b0c898"><div class="ttname"><a href="interpreter_8h.html#a37127d7a51b20176bc98c6a123b0c898">iload_0_impl</a></div><div class="ttdeci">void iload_0_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um valor int da posição 0 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:503</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a3730dff447f987e4ced6a7c73a66b5b1"><div class="ttname"><a href="interpreter_8h.html#a3730dff447f987e4ced6a7c73a66b5b1">iconst_0_impl</a></div><div class="ttdeci">void iconst_0_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Faz o push para a pilha de operando da constante 0 int.</div><div class="ttdef"><b>Definition:</b> interpreter.c:262</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a37c4d55c8d295fc0bdfd9b8ef534029e"><div class="ttname"><a href="interpreter_8h.html#a37c4d55c8d295fc0bdfd9b8ef534029e">iconst_5_impl</a></div><div class="ttdeci">void iconst_5_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Faz o push para a pilha de operando da constante 5 int.</div><div class="ttdef"><b>Definition:</b> interpreter.c:292</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a3b2d03fbf656e08c1500079f9481946a"><div class="ttname"><a href="interpreter_8h.html#a3b2d03fbf656e08c1500079f9481946a">ifeq_impl</a></div><div class="ttdeci">void ifeq_impl(Frame *f, u1 branchbyte1, u1 branchbyte2)</div><div class="ttdoc">Instrução que compara valor da pilha de operandos com zero, verificando se são iguais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1840</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a3c426569abbc7317b3054bdd47f2bb18"><div class="ttname"><a href="interpreter_8h.html#a3c426569abbc7317b3054bdd47f2bb18">lshr_impl</a></div><div class="ttdeci">void lshr_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa um shift right em um long.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1421</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a3dd8b6515774e681b5c7450f96805dbf"><div class="ttname"><a href="interpreter_8h.html#a3dd8b6515774e681b5c7450f96805dbf">drem_impl</a></div><div class="ttdeci">void drem_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Calcula o resto double da divisão entre dois operandos.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1317</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a3e00c3d8b23ca58fc7e95ab7649d9808"><div class="ttname"><a href="interpreter_8h.html#a3e00c3d8b23ca58fc7e95ab7649d9808">ddiv_impl</a></div><div class="ttdeci">void ddiv_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa uma divisão de double.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1251</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a3e5018aef17f11ad90ec7cec60bc27bf"><div class="ttname"><a href="interpreter_8h.html#a3e5018aef17f11ad90ec7cec60bc27bf">if_icmpge_impl</a></div><div class="ttdeci">void if_icmpge_impl(Frame *f, u1 branchbyte1, u1 branchbyte2)</div><div class="ttdoc">Branch será efetuado se o inteiro no topo da pilha for menor do que o próximo inteiro na pilha.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1944</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a408ad29e89a521dd460906e48fa11892"><div class="ttname"><a href="interpreter_8h.html#a408ad29e89a521dd460906e48fa11892">dup2_x1_impl</a></div><div class="ttdeci">void dup2_x1_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Duplica o primeiro ou o segundo valor no topo da pilha de operandos e insere dois valores a baixo.</div><div class="ttdef"><b>Definition:</b> interpreter.c:988</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a4f528881290d5b68d4467509600a1e5a"><div class="ttname"><a href="interpreter_8h.html#a4f528881290d5b68d4467509600a1e5a">multianewarray_fantasma</a></div><div class="ttdeci">void multianewarray_fantasma(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Instrução utilizada como placeholder, para ocupar a posição no array de instruções,...</div><div class="ttdef"><b>Definition:</b> interpreter.c:3102</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a507e45e97e6c56539ab4352c42d8b6f0"><div class="ttname"><a href="interpreter_8h.html#a507e45e97e6c56539ab4352c42d8b6f0">nop_impl</a></div><div class="ttdeci">void nop_impl(Frame *par0, u1 par1, u1 par2)</div><div class="ttdoc">Não executa nada =)</div><div class="ttdef"><b>Definition:</b> interpreter.c:246</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a50f5b2711682c4dba5becb1c240f0be6"><div class="ttname"><a href="interpreter_8h.html#a50f5b2711682c4dba5becb1c240f0be6">iconst_3_impl</a></div><div class="ttdeci">void iconst_3_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Faz o push para a pilha de operando da constante 3 int.</div><div class="ttdef"><b>Definition:</b> interpreter.c:280</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a53314be421cfff62b262ae8b1a4996e1"><div class="ttname"><a href="interpreter_8h.html#a53314be421cfff62b262ae8b1a4996e1">castore_impl</a></div><div class="ttdeci">void castore_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um valor char em um array.</div><div class="ttdef"><b>Definition:</b> interpreter.c:912</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a55115dbf9384ce066daee9e96c73f489"><div class="ttname"><a href="interpreter_8h.html#a55115dbf9384ce066daee9e96c73f489">ldc_impl</a></div><div class="ttdeci">void ldc_impl(Frame *f, u1 indexbyte1, u1 par2)</div><div class="ttdoc">Faz o push de um valor presente na constant pool.</div><div class="ttdef"><b>Definition:</b> interpreter.c:374</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a55d2c46ab40100e475a197d8de96eb44"><div class="ttname"><a href="interpreter_8h.html#a55d2c46ab40100e475a197d8de96eb44">dconst_0_impl</a></div><div class="ttdeci">void dconst_0_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Faz o push para a pilha de operando da constante 0 double.</div><div class="ttdef"><b>Definition:</b> interpreter.c:340</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a5645664b18eea66e013ba1d6778a2b3a"><div class="ttname"><a href="interpreter_8h.html#a5645664b18eea66e013ba1d6778a2b3a">if_icmpgt_impl</a></div><div class="ttdeci">void if_icmpgt_impl(Frame *f, u1 branchbyte1, u1 branchbyte2)</div><div class="ttdoc">Branch será efetuado se o inteiro no topo da pilha for menor do que o próximo inteiro na pilha.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1956</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a5716b756dc713d03db89fba9ce6d141e"><div class="ttname"><a href="interpreter_8h.html#a5716b756dc713d03db89fba9ce6d141e">d2f_impl</a></div><div class="ttdeci">void d2f_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdef"><b>Definition:</b> interpreter.c:1692</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a576a52dc2f97ceedaf5f9cef26ba6e8e"><div class="ttname"><a href="interpreter_8h.html#a576a52dc2f97ceedaf5f9cef26ba6e8e">instanceof_impl</a></div><div class="ttdeci">void instanceof_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Instrução para determinar se um objeto é de um eterminado tipo.</div><div class="ttdef"><b>Definition:</b> interpreter.c:3086</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a5a618bcf65da750ac3228efa2a24e706"><div class="ttname"><a href="interpreter_8h.html#a5a618bcf65da750ac3228efa2a24e706">monitorexit_impl</a></div><div class="ttdeci">void monitorexit_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Instrução para sair de um monitor de um objeto.</div><div class="ttdef"><b>Definition:</b> interpreter.c:3094</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a5a797d824d3c73a196516bc87027af47"><div class="ttname"><a href="interpreter_8h.html#a5a797d824d3c73a196516bc87027af47">bastore_impl</a></div><div class="ttdeci">void bastore_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um valor byte em um array.</div><div class="ttdef"><b>Definition:</b> interpreter.c:903</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a5aec4b3cd5538dd541760232b574d15c"><div class="ttname"><a href="interpreter_8h.html#a5aec4b3cd5538dd541760232b574d15c">ldc_w_impl</a></div><div class="ttdeci">void ldc_w_impl(Frame *f, u1 indexbyte1, u1 indexbyte2)</div><div class="ttdoc">Faz o push de um valor presente na constant pool.</div><div class="ttdef"><b>Definition:</b> interpreter.c:408</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a5b2b878fda3cc09d7c26893af216aab6"><div class="ttname"><a href="interpreter_8h.html#a5b2b878fda3cc09d7c26893af216aab6">fload_2_impl</a></div><div class="ttdeci">void fload_2_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um valor float da posição 2 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:560</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a5bf5d9fcfa3c21087853133d1ec44c86"><div class="ttname"><a href="interpreter_8h.html#a5bf5d9fcfa3c21087853133d1ec44c86">monitorenter_impl</a></div><div class="ttdeci">void monitorenter_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Instrução para entrar no monitor de um objeto.</div><div class="ttdef"><b>Definition:</b> interpreter.c:3090</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a5d31b7b4320964a9557ea0e283aeda9e"><div class="ttname"><a href="interpreter_8h.html#a5d31b7b4320964a9557ea0e283aeda9e">ifne_impl</a></div><div class="ttdeci">void ifne_impl(Frame *f, u1 branchbyte1, u1 branchbyte2)</div><div class="ttdoc">Instrução que compara valor da pilha de operandos com zero, verificando se são diferentes.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1851</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a5d4f5f16654ce9f88712b8b8bcda637e"><div class="ttname"><a href="interpreter_8h.html#a5d4f5f16654ce9f88712b8b8bcda637e">iaload_impl</a></div><div class="ttdeci">void iaload_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um int de um array.</div><div class="ttdef"><b>Definition:</b> interpreter.c:615</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a5d5b8c564571a23868e5864700809237"><div class="ttname"><a href="interpreter_8h.html#a5d5b8c564571a23868e5864700809237">inst_goto_impl</a></div><div class="ttdeci">void inst_goto_impl(Frame *f, u1 branchbyte1, u1 branchbyte2)</div><div class="ttdoc">A instrução sempre efetuará um branch.</div><div class="ttdef"><b>Definition:</b> interpreter.c:2004</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a5e519dd79dc9d531fe066213b8ecb883"><div class="ttname"><a href="interpreter_8h.html#a5e519dd79dc9d531fe066213b8ecb883">fstore_1_impl</a></div><div class="ttdeci">void fstore_1_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um float na posição 1 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:779</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a5f58783dbcc60fa2a2e516f244d2aeb5"><div class="ttname"><a href="interpreter_8h.html#a5f58783dbcc60fa2a2e516f244d2aeb5">ldiv_impl</a></div><div class="ttdeci">void ldiv_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa uma divisão de long.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1220</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a60258997858dc3e21e9a10a24f17368c"><div class="ttname"><a href="interpreter_8h.html#a60258997858dc3e21e9a10a24f17368c">lconst_0_impl</a></div><div class="ttdeci">void lconst_0_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Faz o push para a pilha de operando da constante 0 long.</div><div class="ttdef"><b>Definition:</b> interpreter.c:298</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a62486afd987cf06fec927c7f527995f4"><div class="ttname"><a href="interpreter_8h.html#a62486afd987cf06fec927c7f527995f4">iconst_1_impl</a></div><div class="ttdeci">void iconst_1_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Faz o push para a pilha de operando da constante 1 int.</div><div class="ttdef"><b>Definition:</b> interpreter.c:268</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a640bc526803b685c90c781658bd09712"><div class="ttname"><a href="interpreter_8h.html#a640bc526803b685c90c781658bd09712">fload_3_impl</a></div><div class="ttdeci">void fload_3_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um valor float da posição 3 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:565</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a64369d23265e0f0933fb6e2e22b9fbae"><div class="ttname"><a href="interpreter_8h.html#a64369d23265e0f0933fb6e2e22b9fbae">getfield_impl</a></div><div class="ttdeci">void getfield_impl(Frame *f, u1 indexbyte1, u1 indexbyte2)</div><div class="ttdoc">Instrução para obter o field de um objeto.</div><div class="ttdef"><b>Definition:</b> interpreter.c:2199</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a65579db0e25f2f83c88be65e62b1d1a5"><div class="ttname"><a href="interpreter_8h.html#a65579db0e25f2f83c88be65e62b1d1a5">i2l_impl</a></div><div class="ttdeci">void i2l_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdef"><b>Definition:</b> interpreter.c:1579</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a6640f5fb7ddf516427c8fb60de6723cf"><div class="ttname"><a href="interpreter_8h.html#a6640f5fb7ddf516427c8fb60de6723cf">ifnull_impl</a></div><div class="ttdeci">void ifnull_impl(Frame *f, u1 branchbyte1, u1 branchbyte2)</div><div class="ttdoc">Instrução que irá efetuar um branch caso a referência no topo da pilha seja nula.</div><div class="ttdef"><b>Definition:</b> interpreter.c:3197</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a6af336a823aca16563da1d060657cb42"><div class="ttname"><a href="interpreter_8h.html#a6af336a823aca16563da1d060657cb42">dstore_0_impl</a></div><div class="ttdeci">void dstore_0_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um double na posição 0 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:794</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a6b4bb348fcd8df9c679d8cbe17a4beda"><div class="ttname"><a href="interpreter_8h.html#a6b4bb348fcd8df9c679d8cbe17a4beda">ishr_impl</a></div><div class="ttdeci">void ishr_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa um shift right em um int.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1410</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a6b636e2ac0141a478145c8fafba0e829"><div class="ttname"><a href="interpreter_8h.html#a6b636e2ac0141a478145c8fafba0e829">iconst_m1_impl</a></div><div class="ttdeci">void iconst_m1_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">[brief description]</div><div class="ttdef"><b>Definition:</b> interpreter.c:256</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a6c072ff6b7e58d8c367952658948f005"><div class="ttname"><a href="interpreter_8h.html#a6c072ff6b7e58d8c367952658948f005">lconst_1_impl</a></div><div class="ttdeci">void lconst_1_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Faz o push para a pilha de operando da constante 1 long.</div><div class="ttdef"><b>Definition:</b> interpreter.c:307</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a6c0d7e213c87e416a5aabb99cf95dd84"><div class="ttname"><a href="interpreter_8h.html#a6c0d7e213c87e416a5aabb99cf95dd84">lload_0_impl</a></div><div class="ttdeci">void lload_0_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um valor long da posição 0 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:525</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a6e2dce797c9ca6387fc5ac483602f873"><div class="ttname"><a href="interpreter_8h.html#a6e2dce797c9ca6387fc5ac483602f873">fstore_0_impl</a></div><div class="ttdeci">void fstore_0_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um float na posição 0 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:774</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a6e99e6d05a1054781cf223776c85aca2"><div class="ttname"><a href="interpreter_8h.html#a6e99e6d05a1054781cf223776c85aca2">lor_impl</a></div><div class="ttdeci">void lor_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa a operação &quot;OR&quot; de dois long.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1508</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a70d25e92ed8b9609b0ea355a97c815a5"><div class="ttname"><a href="interpreter_8h.html#a70d25e92ed8b9609b0ea355a97c815a5">athrow_impl</a></div><div class="ttdeci">void athrow_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Instrução para lançar uma exceção ou erro.</div><div class="ttdef"><b>Definition:</b> interpreter.c:3078</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a72a2f47ed998680b590278156da1889b"><div class="ttname"><a href="interpreter_8h.html#a72a2f47ed998680b590278156da1889b">iload_1_impl</a></div><div class="ttdeci">void iload_1_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um valor int da posição 1 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:509</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a7340ecf48ab9383e0922a8e34232490d"><div class="ttname"><a href="interpreter_8h.html#a7340ecf48ab9383e0922a8e34232490d">lmul_impl</a></div><div class="ttdeci">void lmul_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa uma multiplicação de long.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1146</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a74905166c5babf6930eaa97fd80e73e5"><div class="ttname"><a href="interpreter_8h.html#a74905166c5babf6930eaa97fd80e73e5">ixor_impl</a></div><div class="ttdeci">void ixor_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa a operação &quot;XOR&quot; de dois int.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1528</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a74c5ce3a6eb5ef1423385ba1e1c8123b"><div class="ttname"><a href="interpreter_8h.html#a74c5ce3a6eb5ef1423385ba1e1c8123b">lstore_2_impl</a></div><div class="ttdeci">void lstore_2_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um long na posição 2 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:758</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a76ec943602803861252160c49d3cc4f6"><div class="ttname"><a href="interpreter_8h.html#a76ec943602803861252160c49d3cc4f6">aconst_null_impl</a></div><div class="ttdeci">void aconst_null_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Faz o push de um valor nulo para a pilha de operandos.</div><div class="ttdef"><b>Definition:</b> interpreter.c:251</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a79c1cd84788154239326d149c6676a53"><div class="ttname"><a href="interpreter_8h.html#a79c1cd84788154239326d149c6676a53">l2i_impl</a></div><div class="ttdeci">void l2i_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdef"><b>Definition:</b> interpreter.c:1608</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a7a3c70c7da25984b3428a67d3d5686ba"><div class="ttname"><a href="interpreter_8h.html#a7a3c70c7da25984b3428a67d3d5686ba">fadd_impl</a></div><div class="ttdeci">void fadd_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa uma soma de float.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1048</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a7a70787f320c63a836e8612cfed2710a"><div class="ttname"><a href="interpreter_8h.html#a7a70787f320c63a836e8612cfed2710a">lload_impl</a></div><div class="ttdeci">void lload_impl(Frame *f, u1 index, u1 par1)</div><div class="ttdoc">Carrega um valor long do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:475</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a7c2901371cf537ccdd7af317e2f1d6af"><div class="ttname"><a href="interpreter_8h.html#a7c2901371cf537ccdd7af317e2f1d6af">iinc_fantasma</a></div><div class="ttdeci">void iinc_fantasma(Frame *par0, u1 par1, u1 par2)</div><div class="ttdef"><b>Definition:</b> interpreter.c:1562</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a7c948dfa5a781830bf3e913e321ccbbd"><div class="ttname"><a href="interpreter_8h.html#a7c948dfa5a781830bf3e913e321ccbbd">fsub_impl</a></div><div class="ttdeci">void fsub_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa uma subtração de float.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1106</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a7cc19a8d96847baba810dcbdcbb66158"><div class="ttname"><a href="interpreter_8h.html#a7cc19a8d96847baba810dcbdcbb66158">dmul_impl</a></div><div class="ttdeci">void dmul_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa uma multiplicação de double.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1177</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a7dd5fa2ae0f2b7eecb86f8f60b151b5a"><div class="ttname"><a href="interpreter_8h.html#a7dd5fa2ae0f2b7eecb86f8f60b151b5a">dcmpl_impl</a></div><div class="ttdeci">void dcmpl_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Instrução que compara valores double oriundos da pilha de operandos.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1796</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a7dff8c45ae2dabf434ca64b0525fed97"><div class="ttname"><a href="interpreter_8h.html#a7dff8c45ae2dabf434ca64b0525fed97">astore_3_impl</a></div><div class="ttdeci">void astore_3_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena uma referência na posição 3 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:846</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a7f5ac18e186d5971755f900aabc091e3"><div class="ttname"><a href="interpreter_8h.html#a7f5ac18e186d5971755f900aabc091e3">swap_impl</a></div><div class="ttdeci">void swap_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Inverte os dois operandos do topo da pilha.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1010</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a800b8501d1ecc436c0ab5b4427d59577"><div class="ttname"><a href="interpreter_8h.html#a800b8501d1ecc436c0ab5b4427d59577">lload_1_impl</a></div><div class="ttdeci">void lload_1_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um valor long da posição 1 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:531</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a8134c4a9b0fa292b1776194b79b67bfe"><div class="ttname"><a href="interpreter_8h.html#a8134c4a9b0fa292b1776194b79b67bfe">lstore_1_impl</a></div><div class="ttdeci">void lstore_1_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um long na posição 1 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:750</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a81658a89f2d57cb261c6943427bcf688"><div class="ttname"><a href="interpreter_8h.html#a81658a89f2d57cb261c6943427bcf688">ladd_impl</a></div><div class="ttdeci">void ladd_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa uma soma de long.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1029</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a81b1eeb53a1f54fa2d899ffea4844a0f"><div class="ttname"><a href="interpreter_8h.html#a81b1eeb53a1f54fa2d899ffea4844a0f">laload_impl</a></div><div class="ttdeci">void laload_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um long de um array.</div><div class="ttdef"><b>Definition:</b> interpreter.c:625</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a83d3a2730c486a1e485c794706b2e318"><div class="ttname"><a href="interpreter_8h.html#a83d3a2730c486a1e485c794706b2e318">iconst_2_impl</a></div><div class="ttdeci">void iconst_2_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Faz o push para a pilha de operando da constante 2 int.</div><div class="ttdef"><b>Definition:</b> interpreter.c:274</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a83ee790f8d0c8169801133e92174e504"><div class="ttname"><a href="interpreter_8h.html#a83ee790f8d0c8169801133e92174e504">dastore_impl</a></div><div class="ttdeci">void dastore_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um valor double em um array.</div><div class="ttdef"><b>Definition:</b> interpreter.c:887</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a87e203e2a65d4e8b19b6010a83a51126"><div class="ttname"><a href="interpreter_8h.html#a87e203e2a65d4e8b19b6010a83a51126">i2f_impl</a></div><div class="ttdeci">void i2f_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdef"><b>Definition:</b> interpreter.c:1590</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a897e9ebf113e3ebb94cb84b3518a3bb2"><div class="ttname"><a href="interpreter_8h.html#a897e9ebf113e3ebb94cb84b3518a3bb2">lushr_impl</a></div><div class="ttdeci">void lushr_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa um shift right lógico em um long.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1452</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a8cb9adcf77974eec9602bfbe5eda2f19"><div class="ttname"><a href="interpreter_8h.html#a8cb9adcf77974eec9602bfbe5eda2f19">lsub_impl</a></div><div class="ttdeci">void lsub_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa uma subtração de long.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1087</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a8f4afff71a27970c89cd7b6fee81528b"><div class="ttname"><a href="interpreter_8h.html#a8f4afff71a27970c89cd7b6fee81528b">fdiv_impl</a></div><div class="ttdeci">void fdiv_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa uma divisão de float.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1239</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a90565642fb6b84aeed3b94658e87eaec"><div class="ttname"><a href="interpreter_8h.html#a90565642fb6b84aeed3b94658e87eaec">l2d_impl</a></div><div class="ttdeci">void l2d_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdef"><b>Definition:</b> interpreter.c:1625</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a90bb050ea3ec0a7c584d583bf1ddf412"><div class="ttname"><a href="interpreter_8h.html#a90bb050ea3ec0a7c584d583bf1ddf412">putfield_impl</a></div><div class="ttdeci">void putfield_impl(Frame *f, u1 indexbyte1, u1 indexbyte2)</div><div class="ttdoc">Instrução para setar um field em um objeto.</div><div class="ttdef"><b>Definition:</b> interpreter.c:2282</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a96968895a05fc61f307d39d10eebb17e"><div class="ttname"><a href="interpreter_8h.html#a96968895a05fc61f307d39d10eebb17e">arraylength_impl</a></div><div class="ttdeci">void arraylength_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Instrução para obter o tamanho de um array.</div><div class="ttdef"><b>Definition:</b> interpreter.c:3000</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a972b8c792f1649b4080c2733925a05b0"><div class="ttname"><a href="interpreter_8h.html#a972b8c792f1649b4080c2733925a05b0">fconst_0_impl</a></div><div class="ttdeci">void fconst_0_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Faz o push para a pilha de operando da constante 0 float.</div><div class="ttdef"><b>Definition:</b> interpreter.c:317</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a974758c292f828de3ae770bb836f78f8"><div class="ttname"><a href="interpreter_8h.html#a974758c292f828de3ae770bb836f78f8">sipush_impl</a></div><div class="ttdeci">void sipush_impl(Frame *f, u1 byte1, u1 byte2)</div><div class="ttdoc">Faz o push de um short na pilha de operandos.</div><div class="ttdef"><b>Definition:</b> interpreter.c:367</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a97eab79826616be79a70e80115ee4fb9"><div class="ttname"><a href="interpreter_8h.html#a97eab79826616be79a70e80115ee4fb9">aaload_impl</a></div><div class="ttdeci">void aaload_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega uma referência de um array.</div><div class="ttdef"><b>Definition:</b> interpreter.c:660</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a99c1764936f3a2a65a13eb7bfaca5539"><div class="ttname"><a href="interpreter_8h.html#a99c1764936f3a2a65a13eb7bfaca5539">istore_3_impl</a></div><div class="ttdeci">void istore_3_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um int na posição 3 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:737</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a9b5bd3cf1225807dc53903b332849941"><div class="ttname"><a href="interpreter_8h.html#a9b5bd3cf1225807dc53903b332849941">iload_2_impl</a></div><div class="ttdeci">void iload_2_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um valor int da posição 2 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:514</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a9d9db5db2a2a5c388b50d08fa0f134f2"><div class="ttname"><a href="interpreter_8h.html#a9d9db5db2a2a5c388b50d08fa0f134f2">sastore_impl</a></div><div class="ttdeci">void sastore_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um valor short em um array.</div><div class="ttdef"><b>Definition:</b> interpreter.c:921</div></div>
+<div class="ttc" id="ainterpreter_8h_html_a9f9623fed6589335e78fdda9e8167185"><div class="ttname"><a href="interpreter_8h.html#a9f9623fed6589335e78fdda9e8167185">if_icmpeq_impl</a></div><div class="ttdeci">void if_icmpeq_impl(Frame *f, u1 branchbyte1, u1 branchbyte2)</div><div class="ttdoc">Branch será efetuado se o inteiro no topo da pilha for igual ao próximo inteiro na pilha.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1908</div></div>
+<div class="ttc" id="ainterpreter_8h_html_aa069bda088332a9590bf62f731c74ad9"><div class="ttname"><a href="interpreter_8h.html#aa069bda088332a9590bf62f731c74ad9">dup2_impl</a></div><div class="ttdeci">void dup2_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Duplica o primeiro ou o segundo valor no topo da pilha de operandos e insere logo abaixo.</div><div class="ttdef"><b>Definition:</b> interpreter.c:978</div></div>
+<div class="ttc" id="ainterpreter_8h_html_aa28c2cc5c7e40f3668a5a5aebef83d0d"><div class="ttname"><a href="interpreter_8h.html#aa28c2cc5c7e40f3668a5a5aebef83d0d">dload_impl</a></div><div class="ttdeci">void dload_impl(Frame *par0, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um valor double do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:489</div></div>
+<div class="ttc" id="ainterpreter_8h_html_aa28f48dfdf5fb34d0d3b000f211e4b29"><div class="ttname"><a href="interpreter_8h.html#aa28f48dfdf5fb34d0d3b000f211e4b29">ret_impl</a></div><div class="ttdeci">void ret_impl(Frame *f, u1 index, u1 par1)</div><div class="ttdoc">Instrução para retornar de uma subrotina.</div><div class="ttdef"><b>Definition:</b> interpreter.c:2019</div></div>
+<div class="ttc" id="ainterpreter_8h_html_aa405f67ae4d9879717d3cbe94108338c"><div class="ttname"><a href="interpreter_8h.html#aa405f67ae4d9879717d3cbe94108338c">acmpeq_impl</a></div><div class="ttdeci">void acmpeq_impl(Frame *f, u1 branchbyte1, u1 branchbyte2)</div><div class="ttdoc">Branch será efetuado se as referências na pilha forem iguais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1980</div></div>
+<div class="ttc" id="ainterpreter_8h_html_aa51dd50b44850f4d54bddc48a6ddbbdf"><div class="ttname"><a href="interpreter_8h.html#aa51dd50b44850f4d54bddc48a6ddbbdf">fload_impl</a></div><div class="ttdeci">void fload_impl(Frame *f, u1 index, u1 par1)</div><div class="ttdoc">Carrega um valor float do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:483</div></div>
+<div class="ttc" id="ainterpreter_8h_html_aa7e38d0b14773bfd5c7e000943e06672"><div class="ttname"><a href="interpreter_8h.html#aa7e38d0b14773bfd5c7e000943e06672">dload_0_impl</a></div><div class="ttdeci">void dload_0_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um valor double da posição 0 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:570</div></div>
+<div class="ttc" id="ainterpreter_8h_html_aa8fc1214f8635cc5bc151133950c930c"><div class="ttname"><a href="interpreter_8h.html#aa8fc1214f8635cc5bc151133950c930c">acmpne_impl</a></div><div class="ttdeci">void acmpne_impl(Frame *f, u1 branchbyte1, u1 branchbyte2)</div><div class="ttdoc">Branch será efetuado se as referências na pilha não forem iguais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1992</div></div>
+<div class="ttc" id="ainterpreter_8h_html_aaf52b13ead1fb7d17081c45549ca116f"><div class="ttname"><a href="interpreter_8h.html#aaf52b13ead1fb7d17081c45549ca116f">iand_impl</a></div><div class="ttdeci">void iand_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa a operação &quot;AND&quot; de dois int.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1470</div></div>
+<div class="ttc" id="ainterpreter_8h_html_aafe25c2b9b58c02ec16967e140cd91ed"><div class="ttname"><a href="interpreter_8h.html#aafe25c2b9b58c02ec16967e140cd91ed">ldc2_w_impl</a></div><div class="ttdeci">void ldc2_w_impl(Frame *f, u1 branchbyte1, u1 branchbyte2)</div><div class="ttdoc">Faz o push de um valor long ou double presente na constant pool.</div><div class="ttdef"><b>Definition:</b> interpreter.c:442</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ab05d9f1b909ddd08c949ff9b32274638"><div class="ttname"><a href="interpreter_8h.html#ab05d9f1b909ddd08c949ff9b32274638">fload_1_impl</a></div><div class="ttdeci">void fload_1_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um valor float da posição 1 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:555</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ab32e50753f2824c1e87e97e51e9fa842"><div class="ttname"><a href="interpreter_8h.html#ab32e50753f2824c1e87e97e51e9fa842">freturn_impl</a></div><div class="ttdeci">void freturn_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Instrução para retornar um float de um método.</div><div class="ttdef"><b>Definition:</b> interpreter.c:2048</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ab398ecfa03c6abc5f955cc1f2d372b6a"><div class="ttname"><a href="interpreter_8h.html#ab398ecfa03c6abc5f955cc1f2d372b6a">iflt_impl</a></div><div class="ttdeci">void iflt_impl(Frame *f, u1 branchbyte1, u1 branchbyte2)</div><div class="ttdoc">Instrução que compara valor da pilha de operandos com zero, verificando se o valor da pilha de operan...</div><div class="ttdef"><b>Definition:</b> interpreter.c:1863</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ab589643b003d9d93c59378b823a46adf"><div class="ttname"><a href="interpreter_8h.html#ab589643b003d9d93c59378b823a46adf">pop_fantasma</a></div><div class="ttdeci">void pop_fantasma(Frame *par0, u1 par1, u1 par2)</div><div class="ttdoc">PlaceHolder para ocupar posicao no vetor de posicoes da instrucao pop.</div><div class="ttdef"><b>Definition:</b> interpreter.c:945</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ab6dfafc261589fe50338e0da432183a3"><div class="ttname"><a href="interpreter_8h.html#ab6dfafc261589fe50338e0da432183a3">newarray_impl</a></div><div class="ttdeci">void newarray_impl(Frame *f, u1 atype, u1 par1)</div><div class="ttdoc">Função para criar um novo array de um dado tipo.</div><div class="ttdef"><b>Definition:</b> interpreter.c:2860</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ab8cd9dc2da80fed17374c79517fee882"><div class="ttname"><a href="interpreter_8h.html#ab8cd9dc2da80fed17374c79517fee882">if_icmplt_impl</a></div><div class="ttdeci">void if_icmplt_impl(Frame *f, u1 branchbyte1, u1 branchbyte2)</div><div class="ttdoc">Branch será efetuado se o inteiro no topo da pilha for maior do que o próximo inteiro na pilha.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1932</div></div>
+<div class="ttc" id="ainterpreter_8h_html_abb1540defa8a45e35e3ecce7ec0a875f"><div class="ttname"><a href="interpreter_8h.html#abb1540defa8a45e35e3ecce7ec0a875f">idiv_impl</a></div><div class="ttdeci">void idiv_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa uma divisão de int.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1195</div></div>
+<div class="ttc" id="ainterpreter_8h_html_abb8ddef838515e38662daad7c492e610"><div class="ttname"><a href="interpreter_8h.html#abb8ddef838515e38662daad7c492e610">fstore_3_impl</a></div><div class="ttdeci">void fstore_3_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um float na posição 3 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:789</div></div>
+<div class="ttc" id="ainterpreter_8h_html_abe186934fb5ef8abe5560672d12c3320"><div class="ttname"><a href="interpreter_8h.html#abe186934fb5ef8abe5560672d12c3320">dup_x2_impl</a></div><div class="ttdeci">void dup_x2_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Duplica o valor no topo da pilha de operandos e insere dois ou três valores a baixo.</div><div class="ttdef"><b>Definition:</b> interpreter.c:967</div></div>
+<div class="ttc" id="ainterpreter_8h_html_abf5b09ae1803221309f1e3e7a2569d40"><div class="ttname"><a href="interpreter_8h.html#abf5b09ae1803221309f1e3e7a2569d40">checkcast_impl</a></div><div class="ttdeci">void checkcast_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Instrução para verificar se um objeto é de um determinado tipo.</div><div class="ttdef"><b>Definition:</b> interpreter.c:3082</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ac39d26a5cc59931cf4777a3aebca6e8a"><div class="ttname"><a href="interpreter_8h.html#ac39d26a5cc59931cf4777a3aebca6e8a">i2s_impl</a></div><div class="ttdeci">void i2s_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdef"><b>Definition:</b> interpreter.c:1726</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ac751eccfb4287f55d9bcb0ffe12de64d"><div class="ttname"><a href="interpreter_8h.html#ac751eccfb4287f55d9bcb0ffe12de64d">inst_new_impl</a></div><div class="ttdeci">void inst_new_impl(Frame *f, u1 indexbyte1, u1 indexbyte2)</div><div class="ttdoc">Instrução para criar um novo objeto.</div><div class="ttdef"><b>Definition:</b> interpreter.c:2806</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ac779087ad6378b83ca20381b7f5a9d96"><div class="ttname"><a href="interpreter_8h.html#ac779087ad6378b83ca20381b7f5a9d96">lneg_impl</a></div><div class="ttdeci">void lneg_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Inverte o sinal de um long.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1342</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ac7957d393c5cc302d5b8db9f6a4b74b2"><div class="ttname"><a href="interpreter_8h.html#ac7957d393c5cc302d5b8db9f6a4b74b2">goto_w_impl</a></div><div class="ttdeci">void goto_w_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">A instrução sempre efetuará um branch, para um offset wide.</div><div class="ttdef"><b>Definition:</b> interpreter.c:3223</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ac7b2ceb24092474ea13462bf0f39e89f"><div class="ttname"><a href="interpreter_8h.html#ac7b2ceb24092474ea13462bf0f39e89f">dload_3_impl</a></div><div class="ttdeci">void dload_3_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um valor double da posição 3 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:585</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ac99da319d1b953a019e27a1e82f6801b"><div class="ttname"><a href="interpreter_8h.html#ac99da319d1b953a019e27a1e82f6801b">daload_impl</a></div><div class="ttdeci">void daload_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um double de um array.</div><div class="ttdef"><b>Definition:</b> interpreter.c:647</div></div>
+<div class="ttc" id="ainterpreter_8h_html_aca67261974d3ca2566d71474a6119910"><div class="ttname"><a href="interpreter_8h.html#aca67261974d3ca2566d71474a6119910">wide_impl</a></div><div class="ttdeci">void wide_impl(Frame *f, u1 indexbyte1, u1 indexbyte2)</div><div class="ttdoc">Instrução para estender a próxima instrução para ter o dobro de bytes de índice.</div><div class="ttdef"><b>Definition:</b> interpreter.c:3098</div></div>
+<div class="ttc" id="ainterpreter_8h_html_aca9a1099e214885a5176b1a2f5f1115a"><div class="ttname"><a href="interpreter_8h.html#aca9a1099e214885a5176b1a2f5f1115a">dstore_1_impl</a></div><div class="ttdeci">void dstore_1_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um double na posição 1 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:802</div></div>
+<div class="ttc" id="ainterpreter_8h_html_acacf942750a72d2f3e26109ba067d716"><div class="ttname"><a href="interpreter_8h.html#acacf942750a72d2f3e26109ba067d716">dsub_impl</a></div><div class="ttdeci">void dsub_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa uma subtração de double.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1118</div></div>
+<div class="ttc" id="ainterpreter_8h_html_acad2b720d26d7522b93c9b4a7a71c1cd"><div class="ttname"><a href="interpreter_8h.html#acad2b720d26d7522b93c9b4a7a71c1cd">i2d_impl</a></div><div class="ttdeci">void i2d_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdef"><b>Definition:</b> interpreter.c:1597</div></div>
+<div class="ttc" id="ainterpreter_8h_html_acad99061275207e9d34998576f9e8dbd"><div class="ttname"><a href="interpreter_8h.html#acad99061275207e9d34998576f9e8dbd">caload_impl</a></div><div class="ttdeci">void caload_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um char de um array.</div><div class="ttdef"><b>Definition:</b> interpreter.c:673</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ace49a268ccdbe500278ce1b6a689cb0d"><div class="ttname"><a href="interpreter_8h.html#ace49a268ccdbe500278ce1b6a689cb0d">iload_impl</a></div><div class="ttdeci">void iload_impl(Frame *f, u1 index, u1 par1)</div><div class="ttdoc">Carrega um valor int do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:469</div></div>
+<div class="ttc" id="ainterpreter_8h_html_aced57a633b885d72e23a5a13cb6596c9"><div class="ttname"><a href="interpreter_8h.html#aced57a633b885d72e23a5a13cb6596c9">dup2_x2_impl</a></div><div class="ttdeci">void dup2_x2_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Duplica o primeiro ou o segundo valor no topo da pilha de operandos e insere dois ou três valores a b...</div><div class="ttdef"><b>Definition:</b> interpreter.c:998</div></div>
+<div class="ttc" id="ainterpreter_8h_html_acedf2ff24b371053d1b637ebe84a8e40"><div class="ttname"><a href="interpreter_8h.html#acedf2ff24b371053d1b637ebe84a8e40">land_impl</a></div><div class="ttdeci">void land_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa a operação &quot;AND&quot; de dois long.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1479</div></div>
+<div class="ttc" id="ainterpreter_8h_html_acee29ff3bb2ed306c725bd20a012e8f9"><div class="ttname"><a href="interpreter_8h.html#acee29ff3bb2ed306c725bd20a012e8f9">getstatic_impl</a></div><div class="ttdeci">void getstatic_impl(Frame *f, u1 indexbyte1, u1 indexbyte2)</div><div class="ttdoc">Instrução para obter um field estático de uma classe.</div><div class="ttdef"><b>Definition:</b> interpreter.c:2076</div></div>
+<div class="ttc" id="ainterpreter_8h_html_acef798cf5d7f30a4f590046bc7a72c8c"><div class="ttname"><a href="interpreter_8h.html#acef798cf5d7f30a4f590046bc7a72c8c">istore_2_impl</a></div><div class="ttdeci">void istore_2_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um int na posição 2 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:732</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ad09fc74b67068358c1a58dddce6e07eb"><div class="ttname"><a href="interpreter_8h.html#ad09fc74b67068358c1a58dddce6e07eb">aload_3_impl</a></div><div class="ttdeci">void aload_3_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega uma referência da posição 3 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:607</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ad2e07dfc46701e681897c49250e420bd"><div class="ttname"><a href="interpreter_8h.html#ad2e07dfc46701e681897c49250e420bd">lstore_3_impl</a></div><div class="ttdeci">void lstore_3_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um long na posição 3 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:766</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ad54f9e3d934b3bc93950710bcef4877d"><div class="ttname"><a href="interpreter_8h.html#ad54f9e3d934b3bc93950710bcef4877d">istore_0_impl</a></div><div class="ttdeci">void istore_0_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um int na posição 0 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:722</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ad7d92bae12bf6bf2136964d4453c1a32"><div class="ttname"><a href="interpreter_8h.html#ad7d92bae12bf6bf2136964d4453c1a32">lcmp_impl</a></div><div class="ttdeci">void lcmp_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Instrução que compara valores long oriundos da pilha de operandos.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1736</div></div>
+<div class="ttc" id="ainterpreter_8h_html_adc6c897a29bacc93b5697bd244d5ae84"><div class="ttname"><a href="interpreter_8h.html#adc6c897a29bacc93b5697bd244d5ae84">dup_impl</a></div><div class="ttdeci">void dup_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Duplica o valor no topo da pilha de operandos.</div><div class="ttdef"><b>Definition:</b> interpreter.c:953</div></div>
+<div class="ttc" id="ainterpreter_8h_html_adc728988c04b677132732f8add27a265"><div class="ttname"><a href="interpreter_8h.html#adc728988c04b677132732f8add27a265">fastore_impl</a></div><div class="ttdeci">void fastore_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um valor float em um array.</div><div class="ttdef"><b>Definition:</b> interpreter.c:877</div></div>
+<div class="ttc" id="ainterpreter_8h_html_adc89b64647975ead61bb20cd0308adfd"><div class="ttname"><a href="interpreter_8h.html#adc89b64647975ead61bb20cd0308adfd">aastore_impl</a></div><div class="ttdeci">void aastore_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena uma referência em um array.</div><div class="ttdef"><b>Definition:</b> interpreter.c:930</div></div>
+<div class="ttc" id="ainterpreter_8h_html_add5cb127241c57ccd193716fadd849da"><div class="ttname"><a href="interpreter_8h.html#add5cb127241c57ccd193716fadd849da">lreturn_impl</a></div><div class="ttdeci">void lreturn_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Instrução para retornar um long de um método.</div><div class="ttdef"><b>Definition:</b> interpreter.c:2038</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ade411c5e7aef7d2f1beae3511fe31bb2"><div class="ttname"><a href="interpreter_8h.html#ade411c5e7aef7d2f1beae3511fe31bb2">f2l_impl</a></div><div class="ttdeci">void f2l_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdef"><b>Definition:</b> interpreter.c:1644</div></div>
+<div class="ttc" id="ainterpreter_8h_html_adf7284df25db01c5093022ed325530f1"><div class="ttname"><a href="interpreter_8h.html#adf7284df25db01c5093022ed325530f1">lload_3_impl</a></div><div class="ttdeci">void lload_3_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um valor long da posição 3 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:543</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ae1b560ed8a2a47f66e9101a47464d6aa"><div class="ttname"><a href="interpreter_8h.html#ae1b560ed8a2a47f66e9101a47464d6aa">if_icmpne_impl</a></div><div class="ttdeci">void if_icmpne_impl(Frame *f, u1 branchbyte1, u1 branchbyte2)</div><div class="ttdoc">Branch será efetuado se o inteiro no topo da pilha for diferente do próximo inteiro na pilha.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1920</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ae21833d1604736bac5bcd1508d61f187"><div class="ttname"><a href="interpreter_8h.html#ae21833d1604736bac5bcd1508d61f187">astore_1_impl</a></div><div class="ttdeci">void astore_1_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena uma referência na posição 1 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:832</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ae2d1d2a9cd7b8a3ad441492c955b7b92"><div class="ttname"><a href="interpreter_8h.html#ae2d1d2a9cd7b8a3ad441492c955b7b92">baload_impl</a></div><div class="ttdeci">void baload_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um byte de um array.</div><div class="ttdef"><b>Definition:</b> interpreter.c:664</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ae56c49112623c487c77b7f5280625397"><div class="ttname"><a href="interpreter_8h.html#ae56c49112623c487c77b7f5280625397">ineg_impl</a></div><div class="ttdeci">void ineg_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Inverte o sinal de um int.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1335</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ae608ae3432ad89df99afb45de8d7e025"><div class="ttname"><a href="interpreter_8h.html#ae608ae3432ad89df99afb45de8d7e025">lxor_impl</a></div><div class="ttdeci">void lxor_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa a operação &quot;XOR&quot; de dois long.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1537</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ae628ce179b6b63e89dab3353e3f8d055"><div class="ttname"><a href="interpreter_8h.html#ae628ce179b6b63e89dab3353e3f8d055">iushr_impl</a></div><div class="ttdeci">void iushr_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa um shift right lógico em um int.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1441</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ae6f99897b80e616314169f747d9ffbf9"><div class="ttname"><a href="interpreter_8h.html#ae6f99897b80e616314169f747d9ffbf9">lstore_impl</a></div><div class="ttdeci">void lstore_impl(Frame *f, u1 index, u1 par1)</div><div class="ttdoc">Armazena um long no vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:695</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ae8259f9d27cf6220370d80d303d965ae"><div class="ttname"><a href="interpreter_8h.html#ae8259f9d27cf6220370d80d303d965ae">dreturn_impl</a></div><div class="ttdeci">void dreturn_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Instrução para retornar um double de um método.</div><div class="ttdef"><b>Definition:</b> interpreter.c:2057</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ae840cb6d1701416adedcc1341e06e17b"><div class="ttname"><a href="interpreter_8h.html#ae840cb6d1701416adedcc1341e06e17b">areturn_impl</a></div><div class="ttdeci">void areturn_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Instrução para retornar uma referência de um método.</div><div class="ttdef"><b>Definition:</b> interpreter.c:2068</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ae87f484f7c787b45f55434b7ad02d1d1"><div class="ttname"><a href="interpreter_8h.html#ae87f484f7c787b45f55434b7ad02d1d1">fcmpl_impl</a></div><div class="ttdeci">void fcmpl_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Instrução que compara valores float oriundos da pilha de operandos.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1759</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ae8c13b18f155b75a02b42d9ac91e8b02"><div class="ttname"><a href="interpreter_8h.html#ae8c13b18f155b75a02b42d9ac91e8b02">dstore_2_impl</a></div><div class="ttdeci">void dstore_2_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um double na posição 2 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:810</div></div>
+<div class="ttc" id="ainterpreter_8h_html_ae97ccab2cfdbdb9aaf625472d1aea129"><div class="ttname"><a href="interpreter_8h.html#ae97ccab2cfdbdb9aaf625472d1aea129">astore_0_impl</a></div><div class="ttdeci">void astore_0_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena uma referência na posição 0 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:826</div></div>
+<div class="ttc" id="ainterpreter_8h_html_aea88d108106fc84c0f8d6095b3705aca"><div class="ttname"><a href="interpreter_8h.html#aea88d108106fc84c0f8d6095b3705aca">ior_impl</a></div><div class="ttdeci">void ior_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa a operação &quot;OR&quot; de dois int.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1499</div></div>
+<div class="ttc" id="ainterpreter_8h_html_aeb64e406ff176ac6632658552fe66999"><div class="ttname"><a href="interpreter_8h.html#aeb64e406ff176ac6632658552fe66999">invokespecial_impl</a></div><div class="ttdeci">void invokespecial_impl(Frame *f, u1 indexbyte1, u1 indexbyte2)</div><div class="ttdoc">Instrução para invocar um método de instância.</div><div class="ttdef"><b>Definition:</b> interpreter.c:2603</div></div>
+<div class="ttc" id="ainterpreter_8h_html_aebd8175da28aa12856327da2623e3a7b"><div class="ttname"><a href="interpreter_8h.html#aebd8175da28aa12856327da2623e3a7b">fload_0_impl</a></div><div class="ttdeci">void fload_0_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um valor float da posição 0 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:550</div></div>
+<div class="ttc" id="ainterpreter_8h_html_aef3f8af08a4e92137181f76cb8139ab7"><div class="ttname"><a href="interpreter_8h.html#aef3f8af08a4e92137181f76cb8139ab7">ifgt_impl</a></div><div class="ttdeci">void ifgt_impl(Frame *f, u1 branchbyte1, u1 branchbyte2)</div><div class="ttdoc">Branch será efetuado se o inteiro no topo da pilha for maior do que o valor zero.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1886</div></div>
+<div class="ttc" id="ainterpreter_8h_html_aefac94da5de3c06e0770c68307f3634a"><div class="ttname"><a href="interpreter_8h.html#aefac94da5de3c06e0770c68307f3634a">istore_1_impl</a></div><div class="ttdeci">void istore_1_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um int na posição 1 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:727</div></div>
+<div class="ttc" id="ainterpreter_8h_html_af01388760fa281a776c3595a3a7537c2"><div class="ttname"><a href="interpreter_8h.html#af01388760fa281a776c3595a3a7537c2">astore_impl</a></div><div class="ttdeci">void astore_impl(Frame *f, u1 index, u1 par1)</div><div class="ttdoc">Armazena uma referência no vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:716</div></div>
+<div class="ttc" id="ainterpreter_8h_html_af10332e31ccbae90ec93ef45dfd7ad82"><div class="ttname"><a href="interpreter_8h.html#af10332e31ccbae90ec93ef45dfd7ad82">faload_impl</a></div><div class="ttdeci">void faload_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega um float de um array.</div><div class="ttdef"><b>Definition:</b> interpreter.c:637</div></div>
+<div class="ttc" id="ainterpreter_8h_html_af1123e7992bae8d28bb1ab0b5957f13c"><div class="ttname"><a href="interpreter_8h.html#af1123e7992bae8d28bb1ab0b5957f13c">aload_0_impl</a></div><div class="ttdeci">void aload_0_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Carrega uma referência da posição 0 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:592</div></div>
+<div class="ttc" id="ainterpreter_8h_html_af29bf7ab99ea4eb0e41a20eaacf9a985"><div class="ttname"><a href="interpreter_8h.html#af29bf7ab99ea4eb0e41a20eaacf9a985">bipush_impl</a></div><div class="ttdeci">void bipush_impl(Frame *f, u1 byte, u1 par1)</div><div class="ttdoc">Faz o push de um byte na pilha de operandos.</div><div class="ttdef"><b>Definition:</b> interpreter.c:360</div></div>
+<div class="ttc" id="ainterpreter_8h_html_af37af145ce7a05e7ba730fbbd9f60ca6"><div class="ttname"><a href="interpreter_8h.html#af37af145ce7a05e7ba730fbbd9f60ca6">dneg_impl</a></div><div class="ttdeci">void dneg_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Inverte o sinal de um double.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1365</div></div>
+<div class="ttc" id="ainterpreter_8h_html_af754510950273ffc1f5875762a537186"><div class="ttname"><a href="interpreter_8h.html#af754510950273ffc1f5875762a537186">i2c_impl</a></div><div class="ttdeci">void i2c_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdef"><b>Definition:</b> interpreter.c:1716</div></div>
+<div class="ttc" id="ainterpreter_8h_html_af9e8c0058dd7477984c93375ff9b4da3"><div class="ttname"><a href="interpreter_8h.html#af9e8c0058dd7477984c93375ff9b4da3">ifge_impl</a></div><div class="ttdeci">void ifge_impl(Frame *f, u1 branchbyte1, u1 branchbyte2)</div><div class="ttdoc">Branch será efetuado se o inteiro no topo da pilha for maior ou igual ao valor zero.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1875</div></div>
+<div class="ttc" id="ainterpreter_8h_html_afae56fefeca5a2950f3a7c3c0280ec2b"><div class="ttname"><a href="interpreter_8h.html#afae56fefeca5a2950f3a7c3c0280ec2b">jsr_impl</a></div><div class="ttdeci">void jsr_impl(Frame *f, u1 branchbyte1, u1 branchbyte2)</div><div class="ttdoc">Instrução para efetuar um branch para um offset, dentro do código do mesmo método sendo executado.</div><div class="ttdef"><b>Definition:</b> interpreter.c:2012</div></div>
+<div class="ttc" id="ainterpreter_8h_html_afb835aba9f728ce5807d7315cb2e0cd9"><div class="ttname"><a href="interpreter_8h.html#afb835aba9f728ce5807d7315cb2e0cd9">lshl_impl</a></div><div class="ttdeci">void lshl_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Executa um shift left em um long.</div><div class="ttdef"><b>Definition:</b> interpreter.c:1390</div></div>
+<div class="ttc" id="ainterpreter_8h_html_afb9ec956d414b20f33b815585ea046b5"><div class="ttname"><a href="interpreter_8h.html#afb9ec956d414b20f33b815585ea046b5">lstore_0_impl</a></div><div class="ttdeci">void lstore_0_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Armazena um long na posição 0 do vetor de variáveis locais.</div><div class="ttdef"><b>Definition:</b> interpreter.c:742</div></div>
+<div class="ttc" id="ainterpreter_8h_html_afbbd506576ceb1bc527f2c11513c0acb"><div class="ttname"><a href="interpreter_8h.html#afbbd506576ceb1bc527f2c11513c0acb">jsr_w_impl</a></div><div class="ttdeci">void jsr_w_impl(Frame *f, u1 par1, u1 par2)</div><div class="ttdoc">Instrução para efetuar um branch para um offset wide, de 32 bits, dentro do código do mesmo método se...</div><div class="ttdef"><b>Definition:</b> interpreter.c:3227</div></div>
+<div class="ttc" id="ainterpreter_8h_html_aff2251d8452a64968e4601e4575e5897"><div class="ttname"><a href="interpreter_8h.html#aff2251d8452a64968e4601e4575e5897">invokestatic_impl</a></div><div class="ttdeci">void invokestatic_impl(Frame *f, u1 indexbyte1, u1 indexbyte2)</div><div class="ttdoc">Instrução para invocar um método estático (método de classe)</div><div class="ttdef"><b>Definition:</b> interpreter.c:2702</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae739e0e613640b7872d11cb7b0ad2b3d" name="ae739e0e613640b7872d11cb7b0ad2b3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae739e0e613640b7872d11cb7b0ad2b3d">&#9670;&nbsp;</a></span>instrucoes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="instructions_8h.html#ae3d426f873830945fb44a2e2f2731022">Instrucao</a>* instrucoes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaadd6bd4e20642a7a34ea6db728289ae" name="aaadd6bd4e20642a7a34ea6db728289ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaadd6bd4e20642a7a34ea6db728289ae">&#9670;&nbsp;</a></span>jvm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jvm_8h.html#a36df1d3591b105d3d4e4e00e7ee9498c">JVM</a>* <a class="el" href="structjvm.html">jvm</a> = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Declarar as variáveis globais que serão utilizadas no processo de execução </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="jvm_8c.html">jvm.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+  </ul>
+</div>
+</body>
+</html>

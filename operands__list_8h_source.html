@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JVM: Código-Fonte de lib/Lists/operands_list.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JVM
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Localizar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('operands__list_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">operands_list.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="operands__list_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">Universidade de Brasília - Software Básico</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">Grupo:</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">    Bruno Couto Marino 190011106</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">    Carlos Eduardo Taborda Lottermann 180041509</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">    Gabriel Henrique Souza de Melo 180136577</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">    Igor Laranja Borges Taquary 180122231</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">    Matheus Araujo Ferreira 180024892</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">    Bruno Murta Oliveira de Castro 160069742</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef OPERAMDS_LIST_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define OPERAMDS_LIST_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#ifndef TIPOS_U</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a15b7b54f84c933d1dc59bc77919a3368">   19</a></span><span class="preprocessor">#define TIPOS_U</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="operands__list_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">   20</a></span><span class="keyword">typedef</span> uint8_t <a class="code hl_typedef" href="operands__list_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a>;   </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a732cde1300aafb73b0ea6c2558a7a54f">   21</a></span><span class="keyword">typedef</span> uint16_t <a class="code hl_typedef" href="operands__list_8h.html#a732cde1300aafb73b0ea6c2558a7a54f">u2</a>;  </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="operands__list_8h.html#ae5be1f726785414dd1b77d60df074c9d">   22</a></span><span class="keyword">typedef</span> uint32_t <a class="code hl_typedef" href="operands__list_8h.html#ae5be1f726785414dd1b77d60df074c9d">u4</a>;  </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="operands__list_8h.html#ae4d1c3d548028e31400378ec81026110">   23</a></span><span class="keyword">typedef</span> uint64_t <a class="code hl_typedef" href="operands__list_8h.html#ae4d1c3d548028e31400378ec81026110">u8</a>;  </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#ifndef TIPOS_I</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="operands__list_8h.html#ad925a154a9e05059e1d334f09e880332">   28</a></span><span class="preprocessor">#define TIPOS_I</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a6be0d08d5318753334c788d23128142e">   29</a></span><span class="keyword">typedef</span> int8_t <a class="code hl_typedef" href="operands__list_8h.html#a6be0d08d5318753334c788d23128142e">i1</a>;   </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a71fa27a2ba58296c5995f3f9b9af37e1">   30</a></span><span class="keyword">typedef</span> int16_t <a class="code hl_typedef" href="operands__list_8h.html#a71fa27a2ba58296c5995f3f9b9af37e1">i2</a>;  </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a7bc084923d20fddbe46335d882c6fda2">   31</a></span><span class="keyword">typedef</span> int32_t <a class="code hl_typedef" href="operands__list_8h.html#a7bc084923d20fddbe46335d882c6fda2">i4</a>;  </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="operands__list_8h.html#abaef16ebba624387a2f4839b6ae159c5">   32</a></span><span class="keyword">typedef</span> int64_t <a class="code hl_typedef" href="operands__list_8h.html#abaef16ebba624387a2f4839b6ae159c5">i8</a>;  </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structlista__operandos.html">   42</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="structlista__operandos.html#a153f7fb0eafc0d3458ee6bed93da7c43">   43</a></span>    <a class="code hl_typedef" href="operands__list_8h.html#a7bc084923d20fddbe46335d882c6fda2">i4</a> <a class="code hl_variable" href="structlista__operandos.html#a153f7fb0eafc0d3458ee6bed93da7c43">operando</a>;                </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structlista__operandos.html#a54bba1f2ac99488a6e43292872dfb1cf">   44</a></span>    <span class="keywordtype">void</span> *<a class="code hl_variable" href="structlista__operandos.html#a54bba1f2ac99488a6e43292872dfb1cf">referencia</a>;           </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structlista__operandos.html#ad74497178fa433397953ee125ead51d1">   45</a></span>    <a class="code hl_typedef" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a> <a class="code hl_variable" href="structlista__operandos.html#ad74497178fa433397953ee125ead51d1">tipo_operando</a>;               </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structlista__operandos.html#adccb1144c3dd81c058452bdb13c8f171">   46</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a> *<a class="code hl_variable" href="structlista__operandos.html#adccb1144c3dd81c058452bdb13c8f171">prox</a>;   </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structlista__operandos.html#af172fa1be3c76f4b9342923a9506e733">   47</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a> *<a class="code hl_variable" href="structlista__operandos.html#af172fa1be3c76f4b9342923a9506e733">ant</a>;    </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a94c550791dabb02566a383b410cd325a">   50</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a> <a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31f">   60</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31f">tipos_operandos</a>{</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa32ea4cf3e4933d06248caea66308f31c">   61</a></span>    <a class="code hl_enumvalue" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa32ea4cf3e4933d06248caea66308f31c">BOOLEAN_OP</a> = 1,</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa8640b25ef78414a830fed77ea87c1f32">   62</a></span>    <a class="code hl_enumvalue" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa8640b25ef78414a830fed77ea87c1f32">BYTE_OP</a>,</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa73bc4c034b269cf456bc2a901af8f099">   63</a></span>    <a class="code hl_enumvalue" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa73bc4c034b269cf456bc2a901af8f099">CHAR_OP</a>,</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fafa5636644188507ef14e37e5f3302f90">   64</a></span>    <a class="code hl_enumvalue" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fafa5636644188507ef14e37e5f3302f90">SHORT_OP</a>,</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa21e9fcac9a3a623a2da4139782e5b3eb">   65</a></span>    <a class="code hl_enumvalue" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa21e9fcac9a3a623a2da4139782e5b3eb">INTEGER_OP</a>,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa230712e5b8cf4ca08b6d2a8aceb4f605">   66</a></span>    <a class="code hl_enumvalue" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa230712e5b8cf4ca08b6d2a8aceb4f605">FLOAT_OP</a>,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa272b982d18ad897b4d8d58347b48ae6f">   67</a></span>    <a class="code hl_enumvalue" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa272b982d18ad897b4d8d58347b48ae6f">LONG_OP</a>,</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa9d7b0e1f016c303f827c81ab00297bdd">   68</a></span>    <a class="code hl_enumvalue" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa9d7b0e1f016c303f827c81ab00297bdd">DOUBLE_OP</a>,</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fad177591f08eabd0ac4821477583a2017">   69</a></span>    <a class="code hl_enumvalue" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fad177591f08eabd0ac4821477583a2017">RETURN_ADDRESS_OP</a>,</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa7e1780a7fe80e9662c912c4dc0287c01">   70</a></span>    <a class="code hl_enumvalue" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa7e1780a7fe80e9662c912c4dc0287c01">REFERENCE_OP</a>,</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31faf8e3811bfd6668cfc098279958413eb9">   71</a></span>    <a class="code hl_enumvalue" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31faf8e3811bfd6668cfc098279958413eb9">REFERENCE_ARRAY_BOOLEAN_OP</a>,</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fae9a2c5571ddfb44eb2567ac9963236f0">   72</a></span>    <a class="code hl_enumvalue" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fae9a2c5571ddfb44eb2567ac9963236f0">REFERENCE_ARRAY_CHAR_OP</a>,</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa43b9a6149589c90cf24a1fb522669636">   73</a></span>    <a class="code hl_enumvalue" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa43b9a6149589c90cf24a1fb522669636">REFERENCE_ARRAY_FLOAT_OP</a>,</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa650c71fd895bcba8a6d779007e5e1943">   74</a></span>    <a class="code hl_enumvalue" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa650c71fd895bcba8a6d779007e5e1943">REFERENCE_ARRAY_DOUBLE_OP</a>,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fab1fe63c9bbc6a67bbaf7acfee4920e87">   75</a></span>    <a class="code hl_enumvalue" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fab1fe63c9bbc6a67bbaf7acfee4920e87">REFERENCE_ARRAY_BYTE_OP</a>,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fabb19c4623e7fc1894216dbc19f51d9dc">   76</a></span>    <a class="code hl_enumvalue" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fabb19c4623e7fc1894216dbc19f51d9dc">REFERENCE_ARRAY_SHORT_OP</a>,</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa2206d96b3a68e10ca3b87f199483a21f">   77</a></span>    <a class="code hl_enumvalue" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa2206d96b3a68e10ca3b87f199483a21f">REFERENCE_ARRAY_INT_OP</a>,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa9b7bc3d03300a17dcf0497a143643655">   78</a></span>    <a class="code hl_enumvalue" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa9b7bc3d03300a17dcf0497a143643655">REFERENCE_ARRAY_LONG_OP</a>,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa000e575ab2a8689d7461093a6c42b29e">   79</a></span>    <a class="code hl_enumvalue" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa000e575ab2a8689d7461093a6c42b29e">REFERENCE_STRING_OP</a>,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>};</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="operands__list_8h.html#a35d69375a4e0e6ad887acd3bacf494ef">   82</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31f">tipos_operandos</a> <a class="code hl_enumeration" href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31f">tipos_operandos</a>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a>* <a class="code hl_function" href="operands__list_8h.html#a26eb80b0f6c01f5f1093e409d6fa6c36">CriarLista_operandos</a>();</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a>* <a class="code hl_function" href="operands__list_8h.html#a05c1a362ea474b45f076e39a6d7df766">InserirInicio_operandos</a>(<a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a> *lis, <a class="code hl_typedef" href="operands__list_8h.html#a7bc084923d20fddbe46335d882c6fda2">i4</a> <a class="code hl_variable" href="structlista__operandos.html#a153f7fb0eafc0d3458ee6bed93da7c43">operando</a>, <span class="keywordtype">void</span> *<a class="code hl_variable" href="structlista__operandos.html#a54bba1f2ac99488a6e43292872dfb1cf">referencia</a>, <a class="code hl_typedef" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a> <a class="code hl_variable" href="structlista__operandos.html#ad74497178fa433397953ee125ead51d1">tipo_operando</a>);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a>* <a class="code hl_function" href="operands__list_8h.html#abf489a49092b17cddc699d53d57777a6">InserirFim_operandos</a>(<a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a> *lis, <a class="code hl_typedef" href="operands__list_8h.html#a7bc084923d20fddbe46335d882c6fda2">i4</a> <a class="code hl_variable" href="structlista__operandos.html#a153f7fb0eafc0d3458ee6bed93da7c43">operando</a>, <span class="keywordtype">void</span> *<a class="code hl_variable" href="structlista__operandos.html#a54bba1f2ac99488a6e43292872dfb1cf">referencia</a>, <a class="code hl_typedef" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a> <a class="code hl_variable" href="structlista__operandos.html#ad74497178fa433397953ee125ead51d1">tipo_operando</a>);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a>* <a class="code hl_function" href="operands__list_8h.html#a949665af280b4f54e392cf43729e1ba5">RemoverInicio_operandos</a>(<a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a> *lis);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a>* <a class="code hl_function" href="operands__list_8h.html#ac57c5840163c31b34bb20f584e53d9c0">RemoverFim_operandos</a>(<a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a> *lis);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="keywordtype">void</span> <a class="code hl_function" href="operands__list_8h.html#ac3f471ef52b36ab62a4089ba235684dc">ImprimirLista_operandos</a>(<a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a> *lis);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="keywordtype">void</span> <a class="code hl_function" href="operands__list_8h.html#a9c412c67fcf57cf29f600fc6433a2dcd">LiberarLista_operandos</a>(<a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a> *lis);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a>* <a class="code hl_function" href="operands__list_8h.html#a47c05c430a0512b682bd3c0f1b03ae15">RemoverElemento_operandos</a>(<a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a> *lis,<a class="code hl_typedef" href="operands__list_8h.html#a7bc084923d20fddbe46335d882c6fda2">i4</a> <a class="code hl_variable" href="structlista__operandos.html#a153f7fb0eafc0d3458ee6bed93da7c43">operando</a>, <a class="code hl_typedef" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a> <a class="code hl_variable" href="structlista__operandos.html#ad74497178fa433397953ee125ead51d1">tipo_operando</a>);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a>* <a class="code hl_function" href="operands__list_8h.html#af4b94a23ac8c0dbd14a0f12bf0b002d9">BuscarElemento_operandos</a>(<a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a> *lis, <a class="code hl_typedef" href="operands__list_8h.html#a7bc084923d20fddbe46335d882c6fda2">i4</a> <a class="code hl_variable" href="structlista__operandos.html#a153f7fb0eafc0d3458ee6bed93da7c43">operando</a>, <a class="code hl_typedef" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a> <a class="code hl_variable" href="structlista__operandos.html#ad74497178fa433397953ee125ead51d1">tipo_operando</a>);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a>* <a class="code hl_function" href="operands__list_8h.html#a56500b8bb82a27610942f217066e9fad">BuscarPosicao_operandos</a>(<a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a> *lis, <span class="keywordtype">int</span> posicao);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a>* <a class="code hl_function" href="operands__list_8h.html#a92d247f2012f377773e934b2b3c94dc6">InserirPosicao_operandos</a>(<a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a> *lis, <a class="code hl_typedef" href="operands__list_8h.html#a7bc084923d20fddbe46335d882c6fda2">i4</a> <a class="code hl_variable" href="structlista__operandos.html#a153f7fb0eafc0d3458ee6bed93da7c43">operando</a>, <a class="code hl_typedef" href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a> <a class="code hl_variable" href="structlista__operandos.html#ad74497178fa433397953ee125ead51d1">tipo_operando</a>, <span class="keywordtype">int</span> posicao);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a>* <a class="code hl_function" href="operands__list_8h.html#ababd018589f43b8880dda396f414fd3f">RemoverPosicao_operandos</a>(<a class="code hl_struct" href="structlista__operandos.html">lista_operandos</a> *lis, <span class="keywordtype">int</span> posicao);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassfile_8h_html_ad9f4cdb6757615aae2fad89dab3c5470"><div class="ttname"><a href="classfile_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a></div><div class="ttdeci">uint8_t u1</div><div class="ttdef"><b>Definition:</b> classfile.h:55</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a05c1a362ea474b45f076e39a6d7df766"><div class="ttname"><a href="operands__list_8h.html#a05c1a362ea474b45f076e39a6d7df766">InserirInicio_operandos</a></div><div class="ttdeci">lista_operandos * InserirInicio_operandos(lista_operandos *lis, i4 operando, void *referencia, u1 tipo_operando)</div><div class="ttdoc">Insere um operando (valor ou referencia) no início da lista de operandos.</div><div class="ttdef"><b>Definition:</b> operands_list.c:21</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a26eb80b0f6c01f5f1093e409d6fa6c36"><div class="ttname"><a href="operands__list_8h.html#a26eb80b0f6c01f5f1093e409d6fa6c36">CriarLista_operandos</a></div><div class="ttdeci">lista_operandos * CriarLista_operandos()</div><div class="ttdoc">Inicializa uma lista de operandos.</div><div class="ttdef"><b>Definition:</b> operands_list.c:17</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a47c05c430a0512b682bd3c0f1b03ae15"><div class="ttname"><a href="operands__list_8h.html#a47c05c430a0512b682bd3c0f1b03ae15">RemoverElemento_operandos</a></div><div class="ttdeci">lista_operandos * RemoverElemento_operandos(lista_operandos *lis, i4 operando, u1 tipo_operando)</div><div class="ttdef"><b>Definition:</b> operands_list.c:96</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a4e4626fe04fb7e693e4747300a58f31f"><div class="ttname"><a href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31f">tipos_operandos</a></div><div class="ttdeci">tipos_operandos</div><div class="ttdoc">Enumerador dos tipos de operando suportados pela lista de operandos do programa.</div><div class="ttdef"><b>Definition:</b> operands_list.h:60</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a4e4626fe04fb7e693e4747300a58f31fa000e575ab2a8689d7461093a6c42b29e"><div class="ttname"><a href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa000e575ab2a8689d7461093a6c42b29e">REFERENCE_STRING_OP</a></div><div class="ttdeci">@ REFERENCE_STRING_OP</div><div class="ttdef"><b>Definition:</b> operands_list.h:79</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a4e4626fe04fb7e693e4747300a58f31fa21e9fcac9a3a623a2da4139782e5b3eb"><div class="ttname"><a href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa21e9fcac9a3a623a2da4139782e5b3eb">INTEGER_OP</a></div><div class="ttdeci">@ INTEGER_OP</div><div class="ttdef"><b>Definition:</b> operands_list.h:65</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a4e4626fe04fb7e693e4747300a58f31fa2206d96b3a68e10ca3b87f199483a21f"><div class="ttname"><a href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa2206d96b3a68e10ca3b87f199483a21f">REFERENCE_ARRAY_INT_OP</a></div><div class="ttdeci">@ REFERENCE_ARRAY_INT_OP</div><div class="ttdef"><b>Definition:</b> operands_list.h:77</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a4e4626fe04fb7e693e4747300a58f31fa230712e5b8cf4ca08b6d2a8aceb4f605"><div class="ttname"><a href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa230712e5b8cf4ca08b6d2a8aceb4f605">FLOAT_OP</a></div><div class="ttdeci">@ FLOAT_OP</div><div class="ttdef"><b>Definition:</b> operands_list.h:66</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a4e4626fe04fb7e693e4747300a58f31fa272b982d18ad897b4d8d58347b48ae6f"><div class="ttname"><a href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa272b982d18ad897b4d8d58347b48ae6f">LONG_OP</a></div><div class="ttdeci">@ LONG_OP</div><div class="ttdef"><b>Definition:</b> operands_list.h:67</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a4e4626fe04fb7e693e4747300a58f31fa32ea4cf3e4933d06248caea66308f31c"><div class="ttname"><a href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa32ea4cf3e4933d06248caea66308f31c">BOOLEAN_OP</a></div><div class="ttdeci">@ BOOLEAN_OP</div><div class="ttdef"><b>Definition:</b> operands_list.h:61</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a4e4626fe04fb7e693e4747300a58f31fa43b9a6149589c90cf24a1fb522669636"><div class="ttname"><a href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa43b9a6149589c90cf24a1fb522669636">REFERENCE_ARRAY_FLOAT_OP</a></div><div class="ttdeci">@ REFERENCE_ARRAY_FLOAT_OP</div><div class="ttdef"><b>Definition:</b> operands_list.h:73</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a4e4626fe04fb7e693e4747300a58f31fa650c71fd895bcba8a6d779007e5e1943"><div class="ttname"><a href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa650c71fd895bcba8a6d779007e5e1943">REFERENCE_ARRAY_DOUBLE_OP</a></div><div class="ttdeci">@ REFERENCE_ARRAY_DOUBLE_OP</div><div class="ttdef"><b>Definition:</b> operands_list.h:74</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a4e4626fe04fb7e693e4747300a58f31fa73bc4c034b269cf456bc2a901af8f099"><div class="ttname"><a href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa73bc4c034b269cf456bc2a901af8f099">CHAR_OP</a></div><div class="ttdeci">@ CHAR_OP</div><div class="ttdef"><b>Definition:</b> operands_list.h:63</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a4e4626fe04fb7e693e4747300a58f31fa7e1780a7fe80e9662c912c4dc0287c01"><div class="ttname"><a href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa7e1780a7fe80e9662c912c4dc0287c01">REFERENCE_OP</a></div><div class="ttdeci">@ REFERENCE_OP</div><div class="ttdef"><b>Definition:</b> operands_list.h:70</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a4e4626fe04fb7e693e4747300a58f31fa8640b25ef78414a830fed77ea87c1f32"><div class="ttname"><a href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa8640b25ef78414a830fed77ea87c1f32">BYTE_OP</a></div><div class="ttdeci">@ BYTE_OP</div><div class="ttdef"><b>Definition:</b> operands_list.h:62</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a4e4626fe04fb7e693e4747300a58f31fa9b7bc3d03300a17dcf0497a143643655"><div class="ttname"><a href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa9b7bc3d03300a17dcf0497a143643655">REFERENCE_ARRAY_LONG_OP</a></div><div class="ttdeci">@ REFERENCE_ARRAY_LONG_OP</div><div class="ttdef"><b>Definition:</b> operands_list.h:78</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a4e4626fe04fb7e693e4747300a58f31fa9d7b0e1f016c303f827c81ab00297bdd"><div class="ttname"><a href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fa9d7b0e1f016c303f827c81ab00297bdd">DOUBLE_OP</a></div><div class="ttdeci">@ DOUBLE_OP</div><div class="ttdef"><b>Definition:</b> operands_list.h:68</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a4e4626fe04fb7e693e4747300a58f31fab1fe63c9bbc6a67bbaf7acfee4920e87"><div class="ttname"><a href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fab1fe63c9bbc6a67bbaf7acfee4920e87">REFERENCE_ARRAY_BYTE_OP</a></div><div class="ttdeci">@ REFERENCE_ARRAY_BYTE_OP</div><div class="ttdef"><b>Definition:</b> operands_list.h:75</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a4e4626fe04fb7e693e4747300a58f31fabb19c4623e7fc1894216dbc19f51d9dc"><div class="ttname"><a href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fabb19c4623e7fc1894216dbc19f51d9dc">REFERENCE_ARRAY_SHORT_OP</a></div><div class="ttdeci">@ REFERENCE_ARRAY_SHORT_OP</div><div class="ttdef"><b>Definition:</b> operands_list.h:76</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a4e4626fe04fb7e693e4747300a58f31fad177591f08eabd0ac4821477583a2017"><div class="ttname"><a href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fad177591f08eabd0ac4821477583a2017">RETURN_ADDRESS_OP</a></div><div class="ttdeci">@ RETURN_ADDRESS_OP</div><div class="ttdef"><b>Definition:</b> operands_list.h:69</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a4e4626fe04fb7e693e4747300a58f31fae9a2c5571ddfb44eb2567ac9963236f0"><div class="ttname"><a href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fae9a2c5571ddfb44eb2567ac9963236f0">REFERENCE_ARRAY_CHAR_OP</a></div><div class="ttdeci">@ REFERENCE_ARRAY_CHAR_OP</div><div class="ttdef"><b>Definition:</b> operands_list.h:72</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a4e4626fe04fb7e693e4747300a58f31faf8e3811bfd6668cfc098279958413eb9"><div class="ttname"><a href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31faf8e3811bfd6668cfc098279958413eb9">REFERENCE_ARRAY_BOOLEAN_OP</a></div><div class="ttdeci">@ REFERENCE_ARRAY_BOOLEAN_OP</div><div class="ttdef"><b>Definition:</b> operands_list.h:71</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a4e4626fe04fb7e693e4747300a58f31fafa5636644188507ef14e37e5f3302f90"><div class="ttname"><a href="operands__list_8h.html#a4e4626fe04fb7e693e4747300a58f31fafa5636644188507ef14e37e5f3302f90">SHORT_OP</a></div><div class="ttdeci">@ SHORT_OP</div><div class="ttdef"><b>Definition:</b> operands_list.h:64</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a56500b8bb82a27610942f217066e9fad"><div class="ttname"><a href="operands__list_8h.html#a56500b8bb82a27610942f217066e9fad">BuscarPosicao_operandos</a></div><div class="ttdeci">lista_operandos * BuscarPosicao_operandos(lista_operandos *lis, int posicao)</div><div class="ttdef"><b>Definition:</b> operands_list.c:129</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a6be0d08d5318753334c788d23128142e"><div class="ttname"><a href="operands__list_8h.html#a6be0d08d5318753334c788d23128142e">i1</a></div><div class="ttdeci">int8_t i1</div><div class="ttdef"><b>Definition:</b> operands_list.h:29</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a71fa27a2ba58296c5995f3f9b9af37e1"><div class="ttname"><a href="operands__list_8h.html#a71fa27a2ba58296c5995f3f9b9af37e1">i2</a></div><div class="ttdeci">int16_t i2</div><div class="ttdef"><b>Definition:</b> operands_list.h:30</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a732cde1300aafb73b0ea6c2558a7a54f"><div class="ttname"><a href="operands__list_8h.html#a732cde1300aafb73b0ea6c2558a7a54f">u2</a></div><div class="ttdeci">uint16_t u2</div><div class="ttdef"><b>Definition:</b> operands_list.h:21</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a7bc084923d20fddbe46335d882c6fda2"><div class="ttname"><a href="operands__list_8h.html#a7bc084923d20fddbe46335d882c6fda2">i4</a></div><div class="ttdeci">int32_t i4</div><div class="ttdef"><b>Definition:</b> operands_list.h:31</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a92d247f2012f377773e934b2b3c94dc6"><div class="ttname"><a href="operands__list_8h.html#a92d247f2012f377773e934b2b3c94dc6">InserirPosicao_operandos</a></div><div class="ttdeci">lista_operandos * InserirPosicao_operandos(lista_operandos *lis, i4 operando, u1 tipo_operando, int posicao)</div><div class="ttdef"><b>Definition:</b> operands_list.c:141</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a949665af280b4f54e392cf43729e1ba5"><div class="ttname"><a href="operands__list_8h.html#a949665af280b4f54e392cf43729e1ba5">RemoverInicio_operandos</a></div><div class="ttdeci">lista_operandos * RemoverInicio_operandos(lista_operandos *lis)</div><div class="ttdoc">Remove o operando (valor ou referencia) que está no início da lista de operandos.</div><div class="ttdef"><b>Definition:</b> operands_list.c:69</div></div>
+<div class="ttc" id="aoperands__list_8h_html_a9c412c67fcf57cf29f600fc6433a2dcd"><div class="ttname"><a href="operands__list_8h.html#a9c412c67fcf57cf29f600fc6433a2dcd">LiberarLista_operandos</a></div><div class="ttdeci">void LiberarLista_operandos(lista_operandos *lis)</div><div class="ttdoc">Libera a memória utilizada por toda a lista de operandos passada por argumento.</div><div class="ttdef"><b>Definition:</b> operands_list.c:242</div></div>
+<div class="ttc" id="aoperands__list_8h_html_ababd018589f43b8880dda396f414fd3f"><div class="ttname"><a href="operands__list_8h.html#ababd018589f43b8880dda396f414fd3f">RemoverPosicao_operandos</a></div><div class="ttdeci">lista_operandos * RemoverPosicao_operandos(lista_operandos *lis, int posicao)</div><div class="ttdef"><b>Definition:</b> operands_list.c:171</div></div>
+<div class="ttc" id="aoperands__list_8h_html_abaef16ebba624387a2f4839b6ae159c5"><div class="ttname"><a href="operands__list_8h.html#abaef16ebba624387a2f4839b6ae159c5">i8</a></div><div class="ttdeci">int64_t i8</div><div class="ttdef"><b>Definition:</b> operands_list.h:32</div></div>
+<div class="ttc" id="aoperands__list_8h_html_abf489a49092b17cddc699d53d57777a6"><div class="ttname"><a href="operands__list_8h.html#abf489a49092b17cddc699d53d57777a6">InserirFim_operandos</a></div><div class="ttdeci">lista_operandos * InserirFim_operandos(lista_operandos *lis, i4 operando, void *referencia, u1 tipo_operando)</div><div class="ttdoc">Insere um operando (valor ou referencia) no final da lista de operandos.</div><div class="ttdef"><b>Definition:</b> operands_list.c:43</div></div>
+<div class="ttc" id="aoperands__list_8h_html_ac3f471ef52b36ab62a4089ba235684dc"><div class="ttname"><a href="operands__list_8h.html#ac3f471ef52b36ab62a4089ba235684dc">ImprimirLista_operandos</a></div><div class="ttdeci">void ImprimirLista_operandos(lista_operandos *lis)</div><div class="ttdoc">Imprime na tela uma representação textual da lista de operandos.</div><div class="ttdef"><b>Definition:</b> operands_list.c:194</div></div>
+<div class="ttc" id="aoperands__list_8h_html_ac57c5840163c31b34bb20f584e53d9c0"><div class="ttname"><a href="operands__list_8h.html#ac57c5840163c31b34bb20f584e53d9c0">RemoverFim_operandos</a></div><div class="ttdeci">lista_operandos * RemoverFim_operandos(lista_operandos *lis)</div><div class="ttdoc">Remove o operando (valor ou referencia) que está no final da lista de operandos.</div><div class="ttdef"><b>Definition:</b> operands_list.c:81</div></div>
+<div class="ttc" id="aoperands__list_8h_html_ad9f4cdb6757615aae2fad89dab3c5470"><div class="ttname"><a href="operands__list_8h.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a></div><div class="ttdeci">uint8_t u1</div><div class="ttdef"><b>Definition:</b> operands_list.h:20</div></div>
+<div class="ttc" id="aoperands__list_8h_html_ae4d1c3d548028e31400378ec81026110"><div class="ttname"><a href="operands__list_8h.html#ae4d1c3d548028e31400378ec81026110">u8</a></div><div class="ttdeci">uint64_t u8</div><div class="ttdef"><b>Definition:</b> operands_list.h:23</div></div>
+<div class="ttc" id="aoperands__list_8h_html_ae5be1f726785414dd1b77d60df074c9d"><div class="ttname"><a href="operands__list_8h.html#ae5be1f726785414dd1b77d60df074c9d">u4</a></div><div class="ttdeci">uint32_t u4</div><div class="ttdef"><b>Definition:</b> operands_list.h:22</div></div>
+<div class="ttc" id="aoperands__list_8h_html_af4b94a23ac8c0dbd14a0f12bf0b002d9"><div class="ttname"><a href="operands__list_8h.html#af4b94a23ac8c0dbd14a0f12bf0b002d9">BuscarElemento_operandos</a></div><div class="ttdeci">lista_operandos * BuscarElemento_operandos(lista_operandos *lis, i4 operando, u1 tipo_operando)</div><div class="ttdef"><b>Definition:</b> operands_list.c:118</div></div>
+<div class="ttc" id="astructlista__operandos_html"><div class="ttname"><a href="structlista__operandos.html">lista_operandos</a></div><div class="ttdoc">Estrutura de dados da lista de operandos.</div><div class="ttdef"><b>Definition:</b> operands_list.h:42</div></div>
+<div class="ttc" id="astructlista__operandos_html_a153f7fb0eafc0d3458ee6bed93da7c43"><div class="ttname"><a href="structlista__operandos.html#a153f7fb0eafc0d3458ee6bed93da7c43">lista_operandos::operando</a></div><div class="ttdeci">i4 operando</div><div class="ttdef"><b>Definition:</b> operands_list.h:43</div></div>
+<div class="ttc" id="astructlista__operandos_html_a54bba1f2ac99488a6e43292872dfb1cf"><div class="ttname"><a href="structlista__operandos.html#a54bba1f2ac99488a6e43292872dfb1cf">lista_operandos::referencia</a></div><div class="ttdeci">void * referencia</div><div class="ttdef"><b>Definition:</b> operands_list.h:44</div></div>
+<div class="ttc" id="astructlista__operandos_html_ad74497178fa433397953ee125ead51d1"><div class="ttname"><a href="structlista__operandos.html#ad74497178fa433397953ee125ead51d1">lista_operandos::tipo_operando</a></div><div class="ttdeci">u1 tipo_operando</div><div class="ttdef"><b>Definition:</b> operands_list.h:45</div></div>
+<div class="ttc" id="astructlista__operandos_html_adccb1144c3dd81c058452bdb13c8f171"><div class="ttname"><a href="structlista__operandos.html#adccb1144c3dd81c058452bdb13c8f171">lista_operandos::prox</a></div><div class="ttdeci">struct lista_operandos * prox</div><div class="ttdef"><b>Definition:</b> operands_list.h:46</div></div>
+<div class="ttc" id="astructlista__operandos_html_af172fa1be3c76f4b9342923a9506e733"><div class="ttname"><a href="structlista__operandos.html#af172fa1be3c76f4b9342923a9506e733">lista_operandos::ant</a></div><div class="ttdeci">struct lista_operandos * ant</div><div class="ttdef"><b>Definition:</b> operands_list.h:47</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_9899faf1dc7a85c9d203a438267cf1a3.html">Lists</a></li><li class="navelem"><a class="el" href="operands__list_8h.html">operands_list.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+  </ul>
+</div>
+</body>
+</html>

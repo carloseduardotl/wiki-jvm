@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JVM: Código-Fonte de lib/Lists/class_list.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JVM
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Localizar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class__list_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">class_list.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="class__list_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">Universidade de Brasília - Software Básico</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">Grupo:</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">    Bruno Couto Marino 190011106</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">    Carlos Eduardo Taborda Lottermann 180041509</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">    Gabriel Henrique Souza de Melo 180136577</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">    Igor Laranja Borges Taquary 180122231</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">    Matheus Araujo Ferreira 180024892</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">    Bruno Murta Oliveira de Castro 160069742</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef CLASS_LIST_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define CLASS_LIST_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;../classfile.h&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structclasses_carregadas.html">   21</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structclasses_carregadas.html">classesCarregadas</a></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structclasses_carregadas.html#afc23a59ba3a24cdf6cfe28f496760200">   23</a></span>    <a class="code hl_struct" href="structclassfile.html">Classfile</a> *<a class="code hl_variable" href="structclasses_carregadas.html#afc23a59ba3a24cdf6cfe28f496760200">arquivoClass</a>;            </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structclasses_carregadas.html#af384ae5fb54b8e701dde39c7cfc72211">   24</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structclasses_carregadas.html">classesCarregadas</a> *<a class="code hl_variable" href="structclasses_carregadas.html#af384ae5fb54b8e701dde39c7cfc72211">prox</a>;     </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structclasses_carregadas.html#a8317260ebfdb31c83429d8994f6eb17e">   25</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structclasses_carregadas.html">classesCarregadas</a> *<a class="code hl_variable" href="structclasses_carregadas.html#a8317260ebfdb31c83429d8994f6eb17e">ant</a>;      </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class__list_8h.html#a693c247999d35728bd0c6a81350f714b">   27</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structclasses_carregadas.html">classesCarregadas</a> <a class="code hl_struct" href="structclasses_carregadas.html">classesCarregadas</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><a class="code hl_struct" href="structclasses_carregadas.html">classesCarregadas</a>* <a class="code hl_function" href="class__list_8h.html#a5b477dda67da3600a20aca89745e50ff">CriarLista_classes</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><a class="code hl_struct" href="structclasses_carregadas.html">classesCarregadas</a>* <a class="code hl_function" href="class__list_8h.html#aed29b05fc9738d9fe1dae89d22a80727">InserirFim_classes</a>(<a class="code hl_struct" href="structclasses_carregadas.html">classesCarregadas</a>* lista, <a class="code hl_struct" href="structclassfile.html">Classfile</a> *<a class="code hl_variable" href="structclasses_carregadas.html#afc23a59ba3a24cdf6cfe28f496760200">arquivoClass</a>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><a class="code hl_struct" href="structclasses_carregadas.html">classesCarregadas</a>* <a class="code hl_function" href="class__list_8h.html#a574fa77725b124e6204d6bda10312ef0">RemoverFim_classes</a>(<a class="code hl_struct" href="structclasses_carregadas.html">classesCarregadas</a>* lista);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><a class="code hl_struct" href="structclasses_carregadas.html">classesCarregadas</a>* <a class="code hl_function" href="class__list_8h.html#a2dd3c5e8b198cfefd60cb59c9715e25d">RemoverElemento_classes</a>(<a class="code hl_struct" href="structclasses_carregadas.html">classesCarregadas</a>* lista, <span class="keywordtype">char</span> *<span class="keywordtype">string</span>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><a class="code hl_struct" href="structclasses_carregadas.html">classesCarregadas</a>* <a class="code hl_function" href="class__list_8h.html#a687e56f2a089b97b91081490343e0fd6">BuscarElemento_classes</a>(<a class="code hl_struct" href="structclasses_carregadas.html">classesCarregadas</a>* lista, <span class="keywordtype">char</span> *<span class="keywordtype">string</span>);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><a class="code hl_struct" href="structcp__info.html">Cp_info</a>* <a class="code hl_function" href="class__list_8h.html#a17cd81e927d93991c0e292e960bc82b8">BuscarCPClasseCorrente_classes</a>(<a class="code hl_struct" href="structclasses_carregadas.html">classesCarregadas</a> *lista, <span class="keywordtype">char</span> *<span class="keywordtype">string</span>);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><a class="code hl_struct" href="structmethod__info.html">Method_info</a>* <a class="code hl_function" href="class__list_8h.html#a36d1a82e68e8c9be4755e58bd97a3936">BuscarMethodClasseCorrente_classes</a>(<a class="code hl_struct" href="structclasses_carregadas.html">classesCarregadas</a> *lista, <span class="keywordtype">char</span> * nomeClasse, <span class="keywordtype">char</span> * nomeMetodo);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keywordtype">void</span> <a class="code hl_function" href="class__list_8h.html#af44c1a7cb1296095d478b904e9f6a635">ImprimirLista_classes</a>(<a class="code hl_struct" href="structclasses_carregadas.html">classesCarregadas</a> *lista);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="keywordtype">void</span> <a class="code hl_function" href="class__list_8h.html#a468044227cd5c06e99aa587b999e54d0">LiberarLista_classes</a>(<a class="code hl_struct" href="structclasses_carregadas.html">classesCarregadas</a> *lista);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><a class="code hl_struct" href="structfield__info.html">Field_info</a>* <a class="code hl_function" href="class__list_8h.html#a9849433dab95fe3d27d552f0e4a888de">BuscarFieldClasseCorrente_classes</a>(<a class="code hl_struct" href="structclasses_carregadas.html">classesCarregadas</a> *lista, <span class="keywordtype">char</span> * nomeClasse, <span class="keywordtype">char</span> * nomeField);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass__list_8h_html_a17cd81e927d93991c0e292e960bc82b8"><div class="ttname"><a href="class__list_8h.html#a17cd81e927d93991c0e292e960bc82b8">BuscarCPClasseCorrente_classes</a></div><div class="ttdeci">Cp_info * BuscarCPClasseCorrente_classes(classesCarregadas *lista, char *string)</div><div class="ttdoc">Obtém a pool de constantes para um elemento da lista de classes.</div><div class="ttdef"><b>Definition:</b> class_list.c:102</div></div>
+<div class="ttc" id="aclass__list_8h_html_a2dd3c5e8b198cfefd60cb59c9715e25d"><div class="ttname"><a href="class__list_8h.html#a2dd3c5e8b198cfefd60cb59c9715e25d">RemoverElemento_classes</a></div><div class="ttdeci">classesCarregadas * RemoverElemento_classes(classesCarregadas *lista, char *string)</div><div class="ttdoc">Remove um elemento de qualquer posição da lista a partir do seu nome.</div><div class="ttdef"><b>Definition:</b> class_list.c:67</div></div>
+<div class="ttc" id="aclass__list_8h_html_a36d1a82e68e8c9be4755e58bd97a3936"><div class="ttname"><a href="class__list_8h.html#a36d1a82e68e8c9be4755e58bd97a3936">BuscarMethodClasseCorrente_classes</a></div><div class="ttdeci">Method_info * BuscarMethodClasseCorrente_classes(classesCarregadas *lista, char *nomeClasse, char *nomeMetodo)</div><div class="ttdoc">Obtém um método de um elemento da lista de classes.</div><div class="ttdef"><b>Definition:</b> class_list.c:108</div></div>
+<div class="ttc" id="aclass__list_8h_html_a468044227cd5c06e99aa587b999e54d0"><div class="ttname"><a href="class__list_8h.html#a468044227cd5c06e99aa587b999e54d0">LiberarLista_classes</a></div><div class="ttdeci">void LiberarLista_classes(classesCarregadas *lista)</div><div class="ttdoc">Libera a memória alocada para a lista.</div><div class="ttdef"><b>Definition:</b> class_list.c:133</div></div>
+<div class="ttc" id="aclass__list_8h_html_a574fa77725b124e6204d6bda10312ef0"><div class="ttname"><a href="class__list_8h.html#a574fa77725b124e6204d6bda10312ef0">RemoverFim_classes</a></div><div class="ttdeci">classesCarregadas * RemoverFim_classes(classesCarregadas *lista)</div><div class="ttdoc">Remove um elemento do fim da lista.</div><div class="ttdef"><b>Definition:</b> class_list.c:45</div></div>
+<div class="ttc" id="aclass__list_8h_html_a5b477dda67da3600a20aca89745e50ff"><div class="ttname"><a href="class__list_8h.html#a5b477dda67da3600a20aca89745e50ff">CriarLista_classes</a></div><div class="ttdeci">classesCarregadas * CriarLista_classes()</div><div class="ttdoc">Cria uma nova lista vazia.</div><div class="ttdef"><b>Definition:</b> class_list.c:17</div></div>
+<div class="ttc" id="aclass__list_8h_html_a687e56f2a089b97b91081490343e0fd6"><div class="ttname"><a href="class__list_8h.html#a687e56f2a089b97b91081490343e0fd6">BuscarElemento_classes</a></div><div class="ttdeci">classesCarregadas * BuscarElemento_classes(classesCarregadas *lista, char *string)</div><div class="ttdoc">Busca um elemento na lista a partir do seu nome.</div><div class="ttdef"><b>Definition:</b> class_list.c:90</div></div>
+<div class="ttc" id="aclass__list_8h_html_a9849433dab95fe3d27d552f0e4a888de"><div class="ttname"><a href="class__list_8h.html#a9849433dab95fe3d27d552f0e4a888de">BuscarFieldClasseCorrente_classes</a></div><div class="ttdeci">Field_info * BuscarFieldClasseCorrente_classes(classesCarregadas *lista, char *nomeClasse, char *nomeField)</div><div class="ttdoc">Busca um field de um elemento da lista.</div><div class="ttdef"><b>Definition:</b> class_list.c:143</div></div>
+<div class="ttc" id="aclass__list_8h_html_aed29b05fc9738d9fe1dae89d22a80727"><div class="ttname"><a href="class__list_8h.html#aed29b05fc9738d9fe1dae89d22a80727">InserirFim_classes</a></div><div class="ttdeci">classesCarregadas * InserirFim_classes(classesCarregadas *lista, Classfile *arquivoClass)</div><div class="ttdoc">Insere um elemento no fim da lista.</div><div class="ttdef"><b>Definition:</b> class_list.c:22</div></div>
+<div class="ttc" id="aclass__list_8h_html_af44c1a7cb1296095d478b904e9f6a635"><div class="ttname"><a href="class__list_8h.html#af44c1a7cb1296095d478b904e9f6a635">ImprimirLista_classes</a></div><div class="ttdeci">void ImprimirLista_classes(classesCarregadas *lista)</div><div class="ttdoc">Mostra a lista.</div><div class="ttdef"><b>Definition:</b> class_list.c:123</div></div>
+<div class="ttc" id="astructclasses_carregadas_html"><div class="ttname"><a href="structclasses_carregadas.html">classesCarregadas</a></div><div class="ttdoc">Utilizada para definir um elemento da lista de classes carregadas no programa. Relacionado ao arquivo...</div><div class="ttdef"><b>Definition:</b> class_list.h:22</div></div>
+<div class="ttc" id="astructclasses_carregadas_html_a8317260ebfdb31c83429d8994f6eb17e"><div class="ttname"><a href="structclasses_carregadas.html#a8317260ebfdb31c83429d8994f6eb17e">classesCarregadas::ant</a></div><div class="ttdeci">struct classesCarregadas * ant</div><div class="ttdef"><b>Definition:</b> class_list.h:25</div></div>
+<div class="ttc" id="astructclasses_carregadas_html_af384ae5fb54b8e701dde39c7cfc72211"><div class="ttname"><a href="structclasses_carregadas.html#af384ae5fb54b8e701dde39c7cfc72211">classesCarregadas::prox</a></div><div class="ttdeci">struct classesCarregadas * prox</div><div class="ttdef"><b>Definition:</b> class_list.h:24</div></div>
+<div class="ttc" id="astructclasses_carregadas_html_afc23a59ba3a24cdf6cfe28f496760200"><div class="ttname"><a href="structclasses_carregadas.html#afc23a59ba3a24cdf6cfe28f496760200">classesCarregadas::arquivoClass</a></div><div class="ttdeci">Classfile * arquivoClass</div><div class="ttdef"><b>Definition:</b> class_list.h:23</div></div>
+<div class="ttc" id="astructclassfile_html"><div class="ttname"><a href="structclassfile.html">classfile</a></div><div class="ttdef"><b>Definition:</b> classfile.h:678</div></div>
+<div class="ttc" id="astructcp__info_html"><div class="ttname"><a href="structcp__info.html">cp_info</a></div><div class="ttdef"><b>Definition:</b> classfile.h:141</div></div>
+<div class="ttc" id="astructfield__info_html"><div class="ttname"><a href="structfield__info.html">field_info</a></div><div class="ttdef"><b>Definition:</b> classfile.h:245</div></div>
+<div class="ttc" id="astructmethod__info_html"><div class="ttname"><a href="structmethod__info.html">method_info</a></div><div class="ttdef"><b>Definition:</b> classfile.h:294</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_9899faf1dc7a85c9d203a438267cf1a3.html">Lists</a></li><li class="navelem"><a class="el" href="class__list_8h.html">class_list.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+  </ul>
+</div>
+</body>
+</html>
